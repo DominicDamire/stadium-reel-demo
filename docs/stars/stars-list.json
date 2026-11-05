@@ -1,0 +1,650 @@
+[
+ {
+  "rank": 1,
+  "name": "Robert Lewandowski",
+  "slug": "lewandowski",
+  "club": "Bayern",
+  "number": 9,
+  "kit": {
+   "c1": "#dc052d",
+   "c2": "#ffffff",
+   "c3": "#dc052d",
+   "pattern": "plain"
+  },
+  "crest": "bayern",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 2,
+  "name": "Lionel Messi",
+  "slug": "messi",
+  "club": "Barcelona",
+  "number": 10,
+  "kit": {
+   "c1": "#a50044",
+   "c2": "#004d98",
+   "c3": "#004d98",
+   "pattern": "stripes"
+  },
+  "crest": "barcelona",
+  "source": [
+   "guardian2020",
+   "imdb"
+  ]
+ },
+ {
+  "rank": 3,
+  "name": "Cristiano Ronaldo",
+  "slug": "ronaldo",
+  "club": "Juventus",
+  "number": 7,
+  "kit": {
+   "c1": "#f2f2f2",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "stripes"
+  },
+  "crest": "juventus",
+  "source": [
+   "guardian2020",
+   "imdb"
+  ]
+ },
+ {
+  "rank": 4,
+  "name": "Kevin De Bruyne",
+  "slug": "de-bruyne",
+  "club": "Manchester City",
+  "number": 17,
+  "kit": {
+   "c1": "#6cabdd",
+   "c2": "#ffffff",
+   "c3": "#6cabdd",
+   "pattern": "plain"
+  },
+  "crest": "man-city",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 5,
+  "name": "Sadio Mané",
+  "slug": "mane",
+  "club": "Liverpool",
+  "number": 10,
+  "kit": {
+   "c1": "#c8102e",
+   "c2": "#ffffff",
+   "c3": "#c8102e",
+   "pattern": "plain"
+  },
+  "crest": "liverpool",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 6,
+  "name": "Erling Braut Haaland",
+  "slug": "haaland",
+  "club": "Borussia Dortmund",
+  "number": 9,
+  "kit": {
+   "c1": "#fde100",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "plain"
+  },
+  "crest": "borussia",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 7,
+  "name": "Kylian Mbappé",
+  "slug": "mbappe",
+  "club": "PSG",
+  "number": 7,
+  "kit": {
+   "c1": "#004170",
+   "c2": "#da291c",
+   "c3": "#004170",
+   "pattern": "plain"
+  },
+  "crest": "psg",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 8,
+  "name": "Mohamed Salah",
+  "slug": "salah",
+  "club": "Liverpool",
+  "number": 11,
+  "kit": {
+   "c1": "#c8102e",
+   "c2": "#ffffff",
+   "c3": "#c8102e",
+   "pattern": "plain"
+  },
+  "crest": "liverpool",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 9,
+  "name": "Neymar",
+  "slug": "neymar",
+  "club": "PSG",
+  "number": 10,
+  "kit": {
+   "c1": "#004170",
+   "c2": "#da291c",
+   "c3": "#004170",
+   "pattern": "plain"
+  },
+  "crest": "psg",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 10,
+  "name": "Virgil van Dijk",
+  "slug": "van-dijk",
+  "club": "Liverpool",
+  "number": 4,
+  "kit": {
+   "c1": "#c8102e",
+   "c2": "#ffffff",
+   "c3": "#c8102e",
+   "pattern": "plain"
+  },
+  "crest": "liverpool",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 11,
+  "name": "Joshua Kimmich",
+  "slug": "kimmich",
+  "club": "Bayern",
+  "number": 6,
+  "kit": {
+   "c1": "#dc052d",
+   "c2": "#ffffff",
+   "c3": "#dc052d",
+   "pattern": "plain"
+  },
+  "crest": "bayern",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 12,
+  "name": "Karim Benzema",
+  "slug": "benzema",
+  "club": "Real Madrid",
+  "number": 9,
+  "kit": {
+   "c1": "#f2f2f2",
+   "c2": "#f2f2f2",
+   "c3": "#f2f2f2",
+   "pattern": "plain"
+  },
+  "crest": "real-madrid",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 13,
+  "name": "Sergio Ramos",
+  "slug": "ramos",
+  "club": "Real Madrid",
+  "number": 4,
+  "kit": {
+   "c1": "#f2f2f2",
+   "c2": "#f2f2f2",
+   "c3": "#f2f2f2",
+   "pattern": "plain"
+  },
+  "crest": "real-madrid",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 14,
+  "name": "Thomas Müller",
+  "slug": "thomas-muller",
+  "club": "Bayern",
+  "number": 25,
+  "kit": {
+   "c1": "#dc052d",
+   "c2": "#ffffff",
+   "c3": "#dc052d",
+   "pattern": "plain"
+  },
+  "crest": "bayern",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 15,
+  "name": "Manuel Neuer",
+  "slug": "neuer",
+  "club": "Bayern",
+  "number": 1,
+  "kit": {
+   "c1": "#dc052d",
+   "c2": "#ffffff",
+   "c3": "#dc052d",
+   "pattern": "plain"
+  },
+  "crest": "bayern",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 16,
+  "name": "Serge Gnabry",
+  "slug": "gnabry",
+  "club": "Bayern",
+  "number": 22,
+  "kit": {
+   "c1": "#dc052d",
+   "c2": "#ffffff",
+   "c3": "#dc052d",
+   "pattern": "plain"
+  },
+  "crest": "bayern",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 17,
+  "name": "Thiago Alcântara",
+  "slug": "thiago",
+  "club": "Liverpool",
+  "number": 6,
+  "kit": {
+   "c1": "#c8102e",
+   "c2": "#ffffff",
+   "c3": "#c8102e",
+   "pattern": "plain"
+  },
+  "crest": "liverpool",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 18,
+  "name": "Trent Alexander-Arnold",
+  "slug": "alexander-arnold",
+  "club": "Liverpool",
+  "number": 66,
+  "kit": {
+   "c1": "#c8102e",
+   "c2": "#ffffff",
+   "c3": "#c8102e",
+   "pattern": "plain"
+  },
+  "crest": "liverpool",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 19,
+  "name": "Romelu Lukaku",
+  "slug": "lukaku",
+  "club": "Inter",
+  "number": 9,
+  "kit": {
+   "c1": "#0068a8",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "stripes"
+  },
+  "crest": "inter",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 20,
+  "name": "Harry Kane",
+  "slug": "kane",
+  "club": "Tottenham",
+  "number": 10,
+  "kit": {
+   "c1": "#ffffff",
+   "c2": "#132257",
+   "c3": "#132257",
+   "pattern": "plain"
+  },
+  "crest": "tottenham",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 21,
+  "name": "Bruno Fernandes",
+  "slug": "bruno-fernandes",
+  "club": "Manchester United",
+  "number": 18,
+  "kit": {
+   "c1": "#da291c",
+   "c2": "#ffffff",
+   "c3": "#111111",
+   "pattern": "plain"
+  },
+  "crest": "man-united",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 22,
+  "name": "Son Heung-min",
+  "slug": "son",
+  "club": "Tottenham",
+  "number": 7,
+  "kit": {
+   "c1": "#ffffff",
+   "c2": "#132257",
+   "c3": "#132257",
+   "pattern": "plain"
+  },
+  "crest": "tottenham",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 23,
+  "name": "Alphonso Davies",
+  "slug": "davies",
+  "club": "Bayern",
+  "number": 19,
+  "kit": {
+   "c1": "#dc052d",
+   "c2": "#ffffff",
+   "c3": "#dc052d",
+   "pattern": "plain"
+  },
+  "crest": "bayern",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 24,
+  "name": "Ciro Immobile",
+  "slug": "immobile",
+  "club": "Lazio",
+  "number": 17,
+  "kit": {
+   "c1": "#87d8f7",
+   "c2": "#ffffff",
+   "c3": "#87d8f7",
+   "pattern": "plain"
+  },
+  "crest": null,
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 25,
+  "name": "Zlatan Ibrahimovic",
+  "slug": "ibrahimovic",
+  "club": "Milan",
+  "number": 11,
+  "kit": {
+   "c1": "#fb090b",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "stripes"
+  },
+  "crest": "milan",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 26,
+  "name": "Alisson",
+  "slug": "alisson",
+  "club": "Liverpool",
+  "number": 1,
+  "kit": {
+   "c1": "#c8102e",
+   "c2": "#ffffff",
+   "c3": "#c8102e",
+   "pattern": "plain"
+  },
+  "crest": "liverpool",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 27,
+  "name": "Raheem Sterling",
+  "slug": "sterling",
+  "club": "Manchester City",
+  "number": 7,
+  "kit": {
+   "c1": "#6cabdd",
+   "c2": "#ffffff",
+   "c3": "#6cabdd",
+   "pattern": "plain"
+  },
+  "crest": "man-city",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 28,
+  "name": "Jan Oblak",
+  "slug": "oblak",
+  "club": "Atletico Madrid",
+  "number": 13,
+  "kit": {
+   "c1": "#cb3524",
+   "c2": "#ffffff",
+   "c3": "#272e61",
+   "pattern": "stripes"
+  },
+  "crest": "atletico",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 29,
+  "name": "Jadon Sancho",
+  "slug": "sancho",
+  "club": "Borussia Dortmund",
+  "number": 7,
+  "kit": {
+   "c1": "#fde100",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "plain"
+  },
+  "crest": "borussia",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 30,
+  "name": "Timo Werner",
+  "slug": "werner",
+  "club": "Chelsea",
+  "number": 11,
+  "kit": {
+   "c1": "#034694",
+   "c2": "#ffffff",
+   "c3": "#034694",
+   "pattern": "plain"
+  },
+  "crest": "chelsea",
+  "source": [
+   "guardian2020"
+  ]
+ },
+ {
+  "rank": 31,
+  "name": "Pelé",
+  "slug": "pele",
+  "club": "Santos",
+  "number": 10,
+  "kit": {
+   "c1": "#f2f2f2",
+   "c2": "#f2f2f2",
+   "c3": "#f2f2f2",
+   "pattern": "plain"
+  },
+  "crest": "santos",
+  "source": [
+   "imdb"
+  ]
+ },
+ {
+  "rank": 32,
+  "name": "Diego Maradona",
+  "slug": "maradona",
+  "club": "Napoli",
+  "number": 10,
+  "kit": {
+   "c1": "#12a0d7",
+   "c2": "#ffffff",
+   "c3": "#12a0d7",
+   "pattern": "plain"
+  },
+  "crest": null,
+  "source": [
+   "imdb"
+  ]
+ },
+ {
+  "rank": 33,
+  "name": "Zinédine Zidane",
+  "slug": "zidane",
+  "club": "Real Madrid",
+  "number": 5,
+  "kit": {
+   "c1": "#f2f2f2",
+   "c2": "#f2f2f2",
+   "c3": "#f2f2f2",
+   "pattern": "plain"
+  },
+  "crest": "real-madrid",
+  "source": [
+   "imdb"
+  ]
+ },
+ {
+  "rank": 34,
+  "name": "Ronaldo",
+  "slug": "ronaldo-nazario",
+  "club": "Inter",
+  "number": 9,
+  "kit": {
+   "c1": "#0068a8",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "stripes"
+  },
+  "crest": "inter",
+  "source": [
+   "imdb"
+  ]
+ },
+ {
+  "rank": 35,
+  "name": "Ronaldinho Gaúcho",
+  "slug": "ronaldinho",
+  "club": "Barcelona",
+  "number": 10,
+  "kit": {
+   "c1": "#a50044",
+   "c2": "#004d98",
+   "c3": "#004d98",
+   "pattern": "stripes"
+  },
+  "crest": "barcelona",
+  "source": [
+   "imdb"
+  ]
+ },
+ {
+  "rank": 36,
+  "name": "Thierry Henry",
+  "slug": "henry",
+  "club": "Arsenal",
+  "number": 14,
+  "kit": {
+   "c1": "#ef0107",
+   "c2": "#ffffff",
+   "c3": "#ef0107",
+   "pattern": "plain"
+  },
+  "crest": "arsenal",
+  "source": [
+   "imdb"
+  ]
+ },
+ {
+  "rank": 37,
+  "name": "Gianluigi Buffon",
+  "slug": "buffon",
+  "club": "Juventus",
+  "number": 1,
+  "kit": {
+   "c1": "#f2f2f2",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "stripes"
+  },
+  "crest": "juventus",
+  "source": [
+   "imdb"
+  ]
+ },
+ {
+  "rank": 38,
+  "name": "Paolo Maldini",
+  "slug": "maldini",
+  "club": "Milan",
+  "number": 3,
+  "kit": {
+   "c1": "#fb090b",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "stripes"
+  },
+  "crest": "milan",
+  "source": [
+   "imdb"
+  ]
+ }
+]

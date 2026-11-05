@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Стадион фанатов</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden}
+  canvas{display:block;width:100%;height:100%;touch-action:none}
+  #dbg{margin-top:8px;font:11px/1.4 monospace;color:#7dffa0;white-space:pre-wrap}
+  #panel{position:fixed;top:10px;left:10px;width:270px;padding:10px 12px;background:rgba(8,10,16,.82);backdrop-filter:blur(8px);color:#fff;font:12px/1.4 -apple-system,Arial;border-radius:10px;border:1px solid #ffffff22}
+  #panel label{display:grid;grid-template-columns:1fr auto;gap:2px 6px;margin-top:8px}
+  #panel label input{grid-column:1/3}
+  #panel[hidden]{display:none}
+  #panel small{display:block;margin-top:8px;opacity:.6}
+  #panel{z-index:11}
+  #boot{position:fixed;inset:0;z-index:100;background:#05070c;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font:600 16px/1.3 -apple-system,Arial,sans-serif;transition:opacity .4s}
+  #boot i{display:block;width:200px;height:4px;border-radius:2px;background:#ffffff22;overflow:hidden}
+  #boot b{display:block;height:100%;width:5%;background:#ffc83a;transition:width .3s}
+  #boot button{display:none;font:inherit;padding:8px 18px;border-radius:8px;border:0;background:#ffc83a;color:#000}
+  #boot.err button{display:block}
+</style>
+<link rel="stylesheet" href="hud.css">
+<link rel="stylesheet" href="join.css">
+</head>
+<body>
+<div id="boot"><span id="boot-t">Загрузка стадиона…</span><i><b id="boot-b"></b></i><button onclick="location.reload()">Повторить</button></div>
+<div id="panel"></div>
+<div id="dbg"></div>
+<script>
+// Boot: pick a working CDN for three.js (jsdelivr, else unpkg), then install the import map and start the app modules in order.
+(async () => {
+  const $ = id => document.getElementById(id), bar = p => { $('boot-b').style.width = p + '%'; };
+  const CDN = ['https://cdn.jsdelivr.net/npm/three@0.160.0/', 'https://unpkg.com/three@0.160.0/'];
+  let base = null;
+  for (let tries = 0; tries < 4 && !base; tries++) {
+    for (const c of CDN) { try { await import(c + 'build/three.module.js'); base = c; break; } catch (e) { /* next CDN */ } }
+    if (!base) await new Promise(r => setTimeout(r, 1200 * (tries + 1)));
+  }
+  if (!base) { $('boot').classList.add('err'); $('boot-t').textContent = 'Нет сети. Проверьте интернет и повторите.'; return; }
+  bar(30);
+  const m = document.createElement('script'); m.type = 'importmap';
+  m.textContent = JSON.stringify({ imports: { three: base + 'build/three.module.js', 'three/addons/': base + 'examples/jsm/' } });
+  document.head.append(m);
+  for (const s of ['main', 'join', 'sound', 'tiermap', 'editor']) {
+    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=1'; document.body.append(e);
+  }
+  bar(60);
+  const t0 = performance.now(), tick = () => {
+    const r = window.__stadium && window.__stadium.renderer;
+    if (r && r.info.render.frame > 1) { window.__firstFrame = performance.now(); bar(100); $('boot').style.opacity = 0; setTimeout(() => $('boot').remove(), 450); return; }
+    if (performance.now() - t0 > 60000) { $('boot-t').textContent = 'Долго грузится… подождите или повторите.'; $('boot').classList.add('err'); }
+    requestAnimationFrame(tick);
+  };
+  tick();
+})();
+</script>
+</body>
+</html>
