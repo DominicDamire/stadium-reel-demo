@@ -1,0 +1,1 @@
+earth-day.jpg, earth-clouds.jpg: Solar System Scope textures (https://www.solarsystemscope.com/textures/), CC BY 4.0, based on NASA imagery. Clouds resized to 1024x512. Copied from ~/earth-3d/public/textures (fetched by its scripts/fetch-assets.mjs).
