@@ -3,88 +3,93 @@
   "rank": 1,
   "name": "Robert Lewandowski",
   "slug": "lewandowski",
-  "club": "Bayern",
+  "club": "Chicago Fire",
   "number": 9,
   "kit": {
-   "c1": "#dc052d",
-   "c2": "#ffffff",
-   "c3": "#dc052d",
+   "c1": "#c8102e",
+   "c2": "#0a1f44",
+   "c3": "#c8102e",
    "pattern": "plain"
   },
-  "crest": "bayern",
+  "crest": "chicago-fire",
   "source": [
    "guardian2020"
-  ]
+  ],
+  "clubRu": "Чикаго Файр"
  },
  {
   "rank": 2,
   "name": "Lionel Messi",
   "slug": "messi",
-  "club": "Barcelona",
+  "club": "Inter Miami",
   "number": 10,
   "kit": {
-   "c1": "#a50044",
-   "c2": "#004d98",
-   "c3": "#004d98",
-   "pattern": "stripes"
+   "c1": "#f7b5cd",
+   "c2": "#111111",
+   "c3": "#111111",
+   "pattern": "plain"
   },
-  "crest": "barcelona",
+  "crest": "inter-miami",
   "source": [
    "guardian2020",
    "imdb"
-  ]
+  ],
+  "clubRu": "Интер Майами"
  },
  {
   "rank": 3,
   "name": "Cristiano Ronaldo",
   "slug": "ronaldo",
-  "club": "Juventus",
+  "club": "Al-Nassr",
   "number": 7,
   "kit": {
-   "c1": "#f2f2f2",
-   "c2": "#111111",
-   "c3": "#111111",
-   "pattern": "stripes"
+   "c1": "#ffd200",
+   "c2": "#0b3d91",
+   "c3": "#0b3d91",
+   "pattern": "plain"
   },
-  "crest": "juventus",
+  "crest": "al-nassr",
   "source": [
    "guardian2020",
    "imdb"
-  ]
+  ],
+  "clubRu": "Аль-Наср"
  },
  {
   "rank": 4,
   "name": "Kevin De Bruyne",
   "slug": "de-bruyne",
-  "club": "Manchester City",
+  "club": "Napoli",
   "number": 17,
   "kit": {
-   "c1": "#6cabdd",
+   "c1": "#12a0d7",
    "c2": "#ffffff",
-   "c3": "#6cabdd",
+   "c3": "#12a0d7",
    "pattern": "plain"
   },
-  "crest": "man-city",
+  "crest": "napoli",
   "source": [
    "guardian2020"
-  ]
+  ],
+  "clubRu": "Наполи"
  },
  {
   "rank": 5,
   "name": "Sadio Mané",
   "slug": "mane",
-  "club": "Liverpool",
+  "club": "Al-Nassr",
   "number": 10,
   "kit": {
-   "c1": "#c8102e",
-   "c2": "#ffffff",
-   "c3": "#c8102e",
+   "c1": "#ffd200",
+   "c2": "#0b3d91",
+   "c3": "#0b3d91",
    "pattern": "plain"
   },
-  "crest": "liverpool",
+  "crest": "al-nassr",
   "source": [
    "guardian2020"
-  ]
+  ],
+  "clubRu": "Аль-Наср"
  },
  {
   "rank": 6,
