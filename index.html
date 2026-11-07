@@ -45,7 +45,7 @@
   m.textContent = JSON.stringify({ imports: { three: base + 'build/three.module.js', 'three/addons/': base + 'examples/jsm/' } });
   document.head.append(m);
   for (const s of ['main', 'join', 'sound', 'tiermap', 'editor']) {
-    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=35a'; document.body.append(e);
+    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=36a'; document.body.append(e);
   }
   bar(60);
   const t0 = performance.now(), tick = () => {
