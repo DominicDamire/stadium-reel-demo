@@ -3,7 +3,7 @@
   {
    "club": "Спартак",
    "slug": "spartak",
-   "file": "assets/crests/spartak.png",
+   "file": "assets/crests/spartak.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/9/93/FC_Spartak_Moscow_crest.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Spartak_Moscow_crest.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -12,7 +12,7 @@
   {
    "club": "Зенит",
    "slug": "zenit",
-   "file": "assets/crests/zenit.png",
+   "file": "assets/crests/zenit.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/FC_Zenit_Saint_Petersburg_crest.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Zenit_Saint_Petersburg_crest.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -21,7 +21,7 @@
   {
    "club": "ЦСКА",
    "slug": "cska",
-   "file": "assets/crests/cska.png",
+   "file": "assets/crests/cska.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/2/26/PFK_CSKA_Logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:PFK_CSKA_Logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -30,7 +30,7 @@
   {
    "club": "Локомотив",
    "slug": "lokomotiv",
-   "file": "assets/crests/lokomotiv.png",
+   "file": "assets/crests/lokomotiv.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/9/93/FC_Lokomotiv_Moscow_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Lokomotiv_Moscow_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -39,7 +39,7 @@
   {
    "club": "Динамо",
    "slug": "dynamo",
-   "file": "assets/crests/dynamo.png",
+   "file": "assets/crests/dynamo.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/e/e7/Dynamo_Moscow_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Dynamo_Moscow_logo.svg",
    "license_note": "PD",
@@ -48,7 +48,7 @@
   {
    "club": "Краснодар",
    "slug": "krasnodar",
-   "file": "assets/crests/krasnodar.png",
+   "file": "assets/crests/krasnodar.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/3/30/FC_Krasnodar_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Krasnodar_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -57,7 +57,7 @@
   {
    "club": "Ростов",
    "slug": "rostov",
-   "file": "assets/crests/rostov.png",
+   "file": "assets/crests/rostov.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/a/a2/FC_Rostov_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Rostov_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -66,7 +66,7 @@
   {
    "club": "Рубин",
    "slug": "rubin",
-   "file": "assets/crests/rubin.png",
+   "file": "assets/crests/rubin.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/3/32/FC_Rubin_Kazan_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Rubin_Kazan_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -75,7 +75,7 @@
   {
    "club": "Ахмат",
    "slug": "akhmat",
-   "file": "assets/crests/akhmat.png",
+   "file": "assets/crests/akhmat.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/3/36/Akhmat_Grozny_logo.png",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Akhmat_Grozny_logo.png",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -84,7 +84,7 @@
   {
    "club": "Крылья Советов",
    "slug": "krylia-sovetov",
-   "file": "assets/crests/krylia-sovetov.png",
+   "file": "assets/crests/krylia-sovetov.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/9/92/PFC_Krylia_Sovetov_Samara.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:PFC_Krylia_Sovetov_Samara.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -93,7 +93,7 @@
   {
    "club": "Урал",
    "slug": "ural",
-   "file": "assets/crests/ural.png",
+   "file": "assets/crests/ural.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/8/8f/FC_Ural_Yekaterinburg_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Ural_Yekaterinburg_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -102,7 +102,7 @@
   {
    "club": "Факел",
    "slug": "fakel",
-   "file": "assets/crests/fakel.png",
+   "file": "assets/crests/fakel.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/a/ad/FC_Fakel_Voronezh_logo.png",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Fakel_Voronezh_logo.png",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -111,7 +111,7 @@
   {
    "club": "Манчестер Юнайтед",
    "slug": "man-united",
-   "file": "assets/crests/man-united.png",
+   "file": "assets/crests/man-united.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Manchester_United_FC_crest.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -120,7 +120,7 @@
   {
    "club": "Ливерпуль",
    "slug": "liverpool",
-   "file": "assets/crests/liverpool.png",
+   "file": "assets/crests/liverpool.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Liverpool_FC.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -129,7 +129,7 @@
   {
    "club": "Арсенал",
    "slug": "arsenal",
-   "file": "assets/crests/arsenal.png",
+   "file": "assets/crests/arsenal.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Arsenal_FC.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -138,7 +138,7 @@
   {
    "club": "Челси",
    "slug": "chelsea",
-   "file": "assets/crests/chelsea.png",
+   "file": "assets/crests/chelsea.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Chelsea_FC.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -147,7 +147,7 @@
   {
    "club": "Манчестер Сити",
    "slug": "man-city",
-   "file": "assets/crests/man-city.png",
+   "file": "assets/crests/man-city.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Manchester_City_FC_badge.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -156,7 +156,7 @@
   {
    "club": "Тоттенхэм",
    "slug": "tottenham",
-   "file": "assets/crests/tottenham.png",
+   "file": "assets/crests/tottenham.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Tottenham_Hotspur.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -165,7 +165,7 @@
   {
    "club": "Ньюкасл",
    "slug": "newcastle",
-   "file": "assets/crests/newcastle.png",
+   "file": "assets/crests/newcastle.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/8/87/Newcastle_United_FC_2026_crest.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Newcastle_United_FC_2026_crest.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -174,7 +174,7 @@
   {
    "club": "Астон Вилла",
    "slug": "aston-villa",
-   "file": "assets/crests/aston-villa.png",
+   "file": "assets/crests/aston-villa.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/9/9a/Aston_Villa_FC_new_crest.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Aston_Villa_FC_new_crest.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -183,7 +183,7 @@
   {
    "club": "Атлетико",
    "slug": "atletico",
-   "file": "assets/crests/atletico.png",
+   "file": "assets/crests/atletico.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/f/f9/Atletico_Madrid_Logo_2024.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Atletico_Madrid_Logo_2024.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -192,7 +192,7 @@
   {
    "club": "Бока Хуниорс",
    "slug": "boca",
-   "file": "assets/crests/boca.png",
+   "file": "assets/crests/boca.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Boca_Juniors_logo18.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Boca_Juniors_logo18.svg",
    "license_note": "Public domain",
@@ -201,7 +201,7 @@
   {
    "club": "Ривер Плейт",
    "slug": "river-plate",
-   "file": "assets/crests/river-plate.png",
+   "file": "assets/crests/river-plate.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Club_Atl%C3%A9tico_River_Plate_logo.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Club_Atl%C3%A9tico_River_Plate_logo.svg",
    "license_note": "Public domain",
@@ -210,7 +210,7 @@
   {
    "club": "Севилья",
    "slug": "sevilla",
-   "file": "assets/crests/sevilla.png",
+   "file": "assets/crests/sevilla.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Sevilla_FC_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Sevilla_FC_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -219,7 +219,7 @@
   {
    "club": "Америка",
    "slug": "america",
-   "file": "assets/crests/america.png",
+   "file": "assets/crests/america.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Club_Am%C3%A9rica_crest.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Club_Am%C3%A9rica_crest.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -228,7 +228,7 @@
   {
    "club": "Валенсия",
    "slug": "valencia",
-   "file": "assets/crests/valencia.png",
+   "file": "assets/crests/valencia.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Valenciacf.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Valenciacf.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -237,7 +237,7 @@
   {
    "club": "Бетис",
    "slug": "betis",
-   "file": "assets/crests/betis.png",
+   "file": "assets/crests/betis.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/2/2f/Real_Betis_2022_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Real_Betis_2022_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -246,7 +246,7 @@
   {
    "club": "Пеньяроль",
    "slug": "penarol",
-   "file": "assets/crests/penarol.png",
+   "file": "assets/crests/penarol.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Escudo_del_Club_Atl%C3%A9tico_Pe%C3%B1arol.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Escudo_del_Club_Atl%C3%A9tico_Pe%C3%B1arol.svg",
    "license_note": "Public domain",
@@ -255,7 +255,7 @@
   {
    "club": "Фламенго",
    "slug": "flamengo",
-   "file": "assets/crests/flamengo.png",
+   "file": "assets/crests/flamengo.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Clube_de_Regatas_do_Flamengo_logo.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Clube_de_Regatas_do_Flamengo_logo.svg",
    "license_note": "Public domain",
@@ -264,7 +264,7 @@
   {
    "club": "Коринтианс",
    "slug": "corinthians",
-   "file": "assets/crests/corinthians.png",
+   "file": "assets/crests/corinthians.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Sport_Club_Corinthians_Paulista_crest.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Sport_Club_Corinthians_Paulista_crest.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -273,7 +273,7 @@
   {
    "club": "Бенфика",
    "slug": "benfica",
-   "file": "assets/crests/benfica.png",
+   "file": "assets/crests/benfica.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/a/a2/SL_Benfica_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:SL_Benfica_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -282,7 +282,7 @@
   {
    "club": "Палмейрас",
    "slug": "palmeiras",
-   "file": "assets/crests/palmeiras.png",
+   "file": "assets/crests/palmeiras.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Sociedade_Esportiva_Palmeiras_logo_%281_red_star%29.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Sociedade_Esportiva_Palmeiras_logo_(1_red_star).svg",
    "license_note": "Public domain",
@@ -291,7 +291,7 @@
   {
    "club": "Порту",
    "slug": "porto",
-   "file": "assets/crests/porto.png",
+   "file": "assets/crests/porto.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/f/f1/FC_Porto.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Porto.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -300,7 +300,7 @@
   {
    "club": "Спортинг",
    "slug": "sporting",
-   "file": "assets/crests/sporting.png",
+   "file": "assets/crests/sporting.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/9/97/Sporting_Clube_de_Portugal_logo_%282026%29.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Sporting_Clube_de_Portugal_logo_(2026).svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -309,7 +309,7 @@
   {
    "club": "Сан-Паулу",
    "slug": "sao-paulo",
-   "file": "assets/crests/sao-paulo.png",
+   "file": "assets/crests/sao-paulo.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/S%C3%A3o_Paulo_Futebol_Clube_logo_%282022%29.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:S%C3%A3o_Paulo_Futebol_Clube_logo_(2022).svg",
    "license_note": "Public domain",
@@ -318,7 +318,7 @@
   {
    "club": "Сантос",
    "slug": "santos",
-   "file": "assets/crests/santos.png",
+   "file": "assets/crests/santos.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Santos_Futebol_Clube_logo_%28with_two_stars_and_a_golden_crown%29.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Santos_Futebol_Clube_logo_(with_two_stars_and_a_golden_crown).svg",
    "license_note": "Public domain",
@@ -327,7 +327,7 @@
   {
    "club": "Шанхай Порт",
    "slug": "shanghai-port",
-   "file": "assets/crests/shanghai-port.png",
+   "file": "assets/crests/shanghai-port.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/7/7a/Shanghai_Port_F.C.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Shanghai_Port_F.C.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -336,7 +336,7 @@
   {
    "club": "Шаньдун Тайшань",
    "slug": "shandong",
-   "file": "assets/crests/shandong.png",
+   "file": "assets/crests/shandong.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/8/88/Shandong_Taishan_Football_Club.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Shandong_Taishan_Football_Club.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -345,7 +345,7 @@
   {
    "club": "Пекин Гоань",
    "slug": "beijing-guoan",
-   "file": "assets/crests/beijing-guoan.png",
+   "file": "assets/crests/beijing-guoan.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/a/a8/Beijing_Guoan_F.C.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Beijing_Guoan_F.C.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -354,7 +354,7 @@
   {
    "club": "Гуанчжоу",
    "slug": "guangzhou",
-   "file": "assets/crests/guangzhou.png",
+   "file": "assets/crests/guangzhou.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/9/98/Guangzhou_Evergrande_Taobao_logo.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Guangzhou_Evergrande_Taobao_logo.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -363,7 +363,7 @@
   {
    "club": "Реал",
    "slug": "real-madrid",
-   "file": "assets/crests/real-madrid.png",
+   "file": "assets/crests/real-madrid.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Real_Madrid_CF.svg",
    "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
@@ -372,7 +372,7 @@
   {
    "club": "Барселона",
    "slug": "barcelona",
-   "file": "assets/crests/barcelona.png",
+   "file": "assets/crests/barcelona.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Barcelona_(crest).svg",
    "license_note": "PD",
@@ -381,7 +381,7 @@
   {
    "club": "Бавария",
    "slug": "bayern",
-   "file": "assets/crests/bayern.png",
+   "file": "assets/crests/bayern.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:FC_Bayern_M%C3%BCnchen_logo_(2024).svg",
    "license_note": "Public domain",
@@ -390,7 +390,7 @@
   {
    "club": "Боруссия",
    "slug": "borussia",
-   "file": "assets/crests/borussia.png",
+   "file": "assets/crests/borussia.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Borussia_Dortmund_logo.svg",
    "license_note": "Public domain",
@@ -399,7 +399,7 @@
   {
    "club": "Галатасарай",
    "slug": "galatasaray",
-   "file": "assets/crests/galatasaray.png",
+   "file": "assets/crests/galatasaray.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Galatasaray_S.K._Logo_2026_5-stars.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Galatasaray_S.K._Logo_2026_5-stars.svg",
    "license_note": "CC0",
@@ -408,7 +408,7 @@
   {
    "club": "Фиорентина",
    "slug": "fiorentina",
-   "file": "assets/crests/fiorentina.png",
+   "file": "assets/crests/fiorentina.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:ACF_Fiorentina_-_logo_(Italy,_2022).svg",
    "license_note": "Public domain",
@@ -417,7 +417,7 @@
   {
    "club": "Ювентус",
    "slug": "juventus",
-   "file": "assets/crests/juventus.png",
+   "file": "assets/crests/juventus.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Juventus_FC_-_logo_black_(Italy,_2020).svg",
    "license_note": "Public domain",
@@ -426,7 +426,7 @@
   {
    "club": "Милан",
    "slug": "milan",
-   "file": "assets/crests/milan.png",
+   "file": "assets/crests/milan.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:Logo_of_AC_Milan.svg",
    "license_note": "Public domain",
@@ -435,7 +435,7 @@
   {
    "club": "ПСЖ",
    "slug": "psg",
-   "file": "assets/crests/psg.png",
+   "file": "assets/crests/psg.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg",
    "wiki_file_page": "https://en.wikipedia.org/wiki/File:Paris_Saint-Germain_F.C..svg",
    "license_note": "PD",
@@ -444,7 +444,7 @@
   {
    "club": "Интер",
    "slug": "inter",
-   "file": "assets/crests/inter.png",
+   "file": "assets/crests/inter.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg",
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:FC_Internazionale_Milano_2021.svg",
    "license_note": "Public domain",
