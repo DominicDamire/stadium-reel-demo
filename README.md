@@ -1,4 +1,6 @@
-# Stadium of Fans: live demo
+# Intergalactic Stadium: live demo
+
+_Intergalactic Stadium is the working title; the real name will be chosen by the fans._
 
 A 3D fan stadium in the browser. Clubs fill the sectors in proportion to their fan count, fans pick their own seat, and the arena has VIP lounges, a rewards ladder, celebrities and footballers in the stands, and a space scene around the bowl.
 
@@ -18,6 +20,7 @@ This repo holds only the built, minified static demo. The source lives in a priv
 - Celebrities (lounge) and footballer legends (ring) with photos
 - Space scene by default (Saturn and Jupiter), or the city scene
 - Russian, English and other UI languages (`?lang=`)
+- First-paint loader (pure CSS/SVG, about 8 KB inline): real byte-based progress, fades into the first rendered frame, honours `prefers-reduced-motion`
 
 ## URL flags
 | Flag | Effect |

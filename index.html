@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="icon" href="data:,">
-<title>Стадион фанатов</title>
+<title>Межгалактический стадион</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" crossorigin>
-<link rel="preload" as="script" crossorigin href="js/main.js?v=37a">
+<link rel="preload" as="script" crossorigin href="js/main.js?v=37b">
 <link rel="preload" as="script" crossorigin href="js/c-5LOFAKFM.js">
-<link rel="preload" as="script" crossorigin href="js/c-7G7COY77.js">
-<link rel="preload" as="script" crossorigin href="js/c-UTRCNKNV.js">
+<link rel="preload" as="script" crossorigin href="js/c-E5FLQPXB.js">
+<link rel="preload" as="script" crossorigin href="js/c-TA6O36NX.js">
 <style>
   html,body{margin:0;height:100%;background:#000;overflow:hidden}
   canvas{display:block;width:100%;height:100%;touch-action:none}
@@ -21,45 +21,106 @@
   #panel[hidden]{display:none}
   #panel small{display:block;margin-top:8px;opacity:.6}
   #panel{z-index:11}
-  #boot{position:fixed;inset:0;z-index:100;background:#05070c;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font:600 16px/1.3 -apple-system,Arial,sans-serif;transition:opacity .4s}
-  #boot i{display:block;width:200px;height:4px;border-radius:2px;background:#ffffff22;overflow:hidden}
-  #boot b{display:block;height:100%;width:5%;background:#ffc83a;transition:width .3s}
-  #boot button{display:none;font:inherit;padding:8px 18px;border-radius:8px;border:0;background:#ffc83a;color:#000}
-  #boot.err button{display:block}
 </style>
-<link rel="stylesheet" href="hud.css">
-<link rel="stylesheet" href="join.css">
+<link rel="stylesheet" href="hud.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="join.css" media="print" onload="this.media='all'">
 </head>
 <body>
-<div id="boot"><span id="boot-t">Загрузка стадиона…</span><i><b id="boot-b"></b></i><button onclick="location.reload()">Повторить</button></div>
+<!--LOADER-->
+<div id="boot" data-x="1400000">
+<style>
+#boot{position:fixed;inset:0;z-index:100;overflow:hidden;background:radial-gradient(120% 80% at 50% 28%,#08121f,#02040a 70%);color:#F4F5F7;font:900 16px/1 Oswald,"Arial Narrow",Arial,sans-serif;text-transform:uppercase;--p:0;--f:-apple-system,Inter,Arial,sans-serif;transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+#boot.d{opacity:0;transform:scale(1.04);pointer-events:none}
+#boot i{position:absolute;left:0;right:0;top:-360px;bottom:0;background-size:var(--t) var(--t);opacity:var(--o);animation:bs var(--s) linear infinite}
+@keyframes bs{to{transform:translateY(var(--t))}}
+#boot .e{position:absolute;left:50%;width:220vmax;height:220vmax;margin-left:-110vmax;bottom:calc(30vh - 220vmax);border-radius:50%;background:radial-gradient(ellipse at 50% 0,#0d3166,#061630 14%,#030a18 40%,#02040a 70%);border-top:2px solid #bfe6ff;box-shadow:0 -2px 14px 1px #6cc4ff,0 -14px 70px 6px #2f7dff88,inset 0 22px 50px -10px #5fb6ff99;opacity:calc(.55 + .45*var(--p))}
+#boot .w{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(10px,2.4vh,22px);padding:0 18px 16vh;box-sizing:border-box}
+#boot svg{width:min(88vw,540px,70vh);height:auto;overflow:visible}
+#boot .g{filter:drop-shadow(0 0 7px #E10600)}
+#boot .k{animation:sw 4.5s linear infinite}
+@keyframes sw{to{stroke-dashoffset:-100}}
+#boot h1{margin:0;text-align:center;font:inherit;line-height:.98;white-space:nowrap}
+#boot h1 b{display:block;font-weight:inherit}
+#boot h1 b+b{display:table;margin:.2em auto 0;padding:.04em .3em .02em;background:#E10600;color:#fff;border:3px solid #000;box-shadow:4px 4px 0 #F4F5F7;animation:up .5s .5s both}
+#boot h1 b:first-child{text-shadow:2px 2px 0 #E10600,4px 4px 0 #000}
+#boot h1 span{display:inline-block;animation:up .6s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(.15s + var(--i)*45ms)}
+@keyframes up{from{opacity:0;transform:translateY(.45em) scaleY(1.3);filter:blur(4px)}}
+#boot p{margin:0;font:600 12px/1.2 var(--f);letter-spacing:.2em;color:#B4BAC5;text-align:center;animation:up .8s .9s both}
+#boot p::before{content:"";display:inline-block;width:18px;height:3px;margin:0 10px 3px 0;background:#E10600;vertical-align:middle}
+#boot .c{display:flex;align-items:baseline;gap:8px;padding:5px 14px 4px;background:#000;border:2px solid #F4F5F7;box-shadow:3px 3px 0 #E10600;animation:up .6s 1s both}
+#boot .c b{font-size:26px;min-width:2ch;text-align:right;font-variant-numeric:tabular-nums}
+#boot .c small{font:600 11px var(--f);letter-spacing:.18em;color:#B4BAC5}
+#boot .m,#boot button{display:none}
+#boot.x .m{display:block;font:600 13px/1.3 -apple-system,Arial,sans-serif;text-transform:none;letter-spacing:0;text-align:center;color:#ffb4ad}
+#boot.x button{display:block;font:inherit;font-size:16px;padding:10px 24px;background:#E10600;color:#fff;border:3px solid #000;box-shadow:3px 3px 0 #F4F5F7}
+@media (prefers-reduced-motion:reduce){#boot,#boot *{animation:none!important;transition-duration:.2s!important}#boot.d{transform:none}}
+</style>
+<i style="--t:160px;--o:.55;--s:110s;background-image:radial-gradient(1px 1px at 12px 20px,#fff,#0000),radial-gradient(1px 1px at 84px 112px,#cfe4ff,#0000),radial-gradient(1px 1px at 141px 61px,#fff,#0000)"></i>
+<i style="--t:240px;--o:.8;--s:60s;background-image:radial-gradient(1.3px 1.3px at 30px 50px,#fff,#0000),radial-gradient(1.3px 1.3px at 170px 30px,#ffe9d0,#0000),radial-gradient(1.3px 1.3px at 110px 190px,#fff,#0000)"></i>
+<i style="--t:360px;--o:1;--s:32s;background-image:radial-gradient(2px 2px at 60px 90px,#fff,#0000),radial-gradient(1.8px 1.8px at 250px 40px,#ff8c84,#0000),radial-gradient(2px 2px at 190px 260px,#fff,#0000)"></i>
+<div class="e"></div>
+<div class="w">
+<svg viewBox="0 0 320 130" aria-hidden="true">
+<defs><radialGradient id="bg"><stop offset="0" stop-color="#E10600" stop-opacity=".5"/><stop offset="1" stop-color="#E10600" stop-opacity="0"/></radialGradient>
+<mask id="bm"><path d="M160 22.5A125 42.5 0 1 1 160 107.5A125 42.5 0 1 1 160 22.5" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="1.45 .55" pathLength="100"/></mask></defs>
+<ellipse cx="160" cy="65" rx="150" ry="52" fill="url(#bg)" style="opacity:calc(.25 + .75*var(--p))"/>
+<ellipse cx="160" cy="65" rx="148" ry="50" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="1.5"/>
+<ellipse cx="160" cy="65" rx="125" ry="42.5" fill="none" stroke="#fff" stroke-opacity=".1" stroke-width="9"/>
+<g class="g"><path id="br" d="M160 15A148 50 0 1 1 160 115A148 50 0 1 1 160 15" fill="none" stroke="#fff" stroke-width="2.5" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100"/>
+<path id="bs" d="M160 22.5A125 42.5 0 1 1 160 107.5A125 42.5 0 1 1 160 22.5" fill="none" stroke="#E10600" stroke-width="9" pathLength="100" stroke-dasharray="0 100" mask="url(#bm)"/>
+<circle id="bh" r="4" fill="#fff" cx="160" cy="15"/></g>
+<path class="k" d="M160 15A148 50 0 1 1 160 115A148 50 0 1 1 160 15" fill="none" stroke="#9fd0ff" stroke-width="2" stroke-opacity=".7" pathLength="100" stroke-dasharray="4 96"/>
+<g fill="none" stroke="#fff" stroke-width="1" style="stroke-opacity:calc(.15 + .6*var(--p))"><ellipse cx="160" cy="65" rx="78" ry="25"/><path d="M160 40v50"/><ellipse cx="160" cy="65" rx="13" ry="5"/></g>
+</svg>
+<h1 id="bt"></h1><p id="bp"></p>
+<div class="c"><b id="bn">0</b><small>% <span id="bl"></span></small></div>
+<div class="m" id="bm2"></div><button onclick="location.reload()">&#8635;</button>
+</div>
+<script>
+(()=>{const b=document.getElementById('boot'),$=i=>document.getElementById(i),
+T={ru:['МЕЖГАЛАКТИЧЕСКИЙ СТАДИОН','название выберут фанаты','загрузка','Долго… подождите или повторите.'],
+en:['INTERGALACTIC STADIUM','name chosen by fans — soon','loading','Taking long… wait or retry.'],
+es:['ESTADIO INTERGALÁCTICO','el nombre lo elegirán los aficionados — pronto','cargando'],
+pt:['ESTÁDIO INTERGALÁCTICO','o nome será escolhido pelos torcedores — em breve','carregando'],
+zh:['星际体育场','名字将由球迷选择 — 敬请期待','加载中']};
+let L='ru';try{const q=new URLSearchParams(location.search).get('lang');L=T[q]?q:T[localStorage.getItem('lang')]?localStorage.getItem('lang'):'ru'}catch(e){}
+const d=T[L],w=L=='zh'?[d[0]]:d[0].split(' ');let n=0;
+$('bt').innerHTML=w.map(s=>'<b>'+[...s].map(c=>'<span style="--i:'+n+++'">'+c+'</span>').join('')+'</b>').join('');
+$('bp').textContent=d[1];$('bl').textContent=d[2];
+const fit=()=>{const t=$('bt'),k=Math.min(innerWidth-36,540)/Math.max(...[...t.children].map(e=>e.offsetWidth+16),1);t.style.fontSize=Math.max(22,Math.min(L=='zh'?64:60,parseFloat(getComputedStyle(t).fontSize)*k))+'px'};
+$('bt').style.fontSize='40px';fit();addEventListener('resize',fit);
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,X=+b.dataset.x,br=$('br'),bs=$('bs'),bh=$('bh'),len=br.getTotalLength();
+let tot=0,tg=.03,cu=0,done=0,ff=0;
+try{new PerformanceObserver(l=>{for(const e of l.getEntries())tot+=e.encodedBodySize||e.transferSize||2e4;tg=Math.max(tg,Math.min(.96,.03+.93*tot/X))}).observe({type:'resource',buffered:true})}catch(e){}
+const t0=performance.now(),set=p=>{b.style.setProperty('--p',p);$('bn').textContent=Math.round(p*100);br.style.strokeDashoffset=100-p*100;bs.style.strokeDasharray=p*100+' 100';const q=br.getPointAtLength(p*len);bh.setAttribute('cx',q.x);bh.setAttribute('cy',q.y)};
+const tick=()=>{if(!b.isConnected)return;const r=window.__stadium&&window.__stadium.renderer;
+if(!done&&r&&r.info.render.frame>1){ff=ff||performance.now();if(performance.now()-ff>12e3||performance.getEntriesByType('resource').some(e=>/earth-day/.test(e.name))){done=1;tg=1;window.__firstFrame=ff}}
+cu=rm?tg:cu+(tg-cu)*(done?.25:.07);set(cu);
+if(done&&cu>.995){set(1);setTimeout(()=>{b.classList.add('d');setTimeout(()=>b.remove(),950)},180);return}
+if(!done&&performance.now()-t0>45e3){$('bm2').textContent=d[3]||T.en[3];b.classList.add('x')}
+requestAnimationFrame(tick)};
+window.__boot={err:m=>{$('bm2').textContent=m;b.classList.add('x')}};set(0);tick()})();
+</script>
+</div>
+<!--/LOADER-->
 <div id="panel"></div>
 <div id="dbg"></div>
 <script>
 // Boot: pick a working CDN for three.js (jsdelivr, else unpkg), then install the import map and start the app modules in order.
 (async () => {
-  const $ = id => document.getElementById(id), bar = p => { $('boot-b').style.width = p + '%'; };
   const CDN = ['https://cdn.jsdelivr.net/npm/three@0.160.0/', 'https://unpkg.com/three@0.160.0/'];
   let base = null;
   for (let tries = 0; tries < 4 && !base; tries++) {
     for (const c of CDN) { try { await import(c + 'build/three.module.js'); base = c; break; } catch (e) { /* next CDN */ } }
     if (!base) await new Promise(r => setTimeout(r, 1200 * (tries + 1)));
   }
-  if (!base) { $('boot').classList.add('err'); $('boot-t').textContent = 'Нет сети. Проверьте интернет и повторите.'; return; }
-  bar(30);
+  if (!base) { __boot.err('Нет сети. Проверьте интернет и повторите.'); return; }
   const m = document.createElement('script'); m.type = 'importmap';
   m.textContent = JSON.stringify({ imports: { three: base + 'build/three.module.js', 'three/addons/': base + 'examples/jsm/' } });
   document.head.append(m);
   for (const s of ['main', 'join', 'sound', 'tiermap', 'editor']) {
-    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=37a'; document.body.append(e);
+    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=37b'; document.body.append(e);
   }
-  bar(60);
-  const t0 = performance.now(), tick = () => {
-    const r = window.__stadium && window.__stadium.renderer;
-    if (r && r.info.render.frame > 1) { window.__firstFrame = performance.now(); bar(100); $('boot').style.opacity = 0; setTimeout(() => $('boot').remove(), 450); return; }
-    if (performance.now() - t0 > 60000) { $('boot-t').textContent = 'Долго грузится… подождите или повторите.'; $('boot').classList.add('err'); }
-    requestAnimationFrame(tick);
-  };
-  tick();
 })();
 </script>
 </body>
