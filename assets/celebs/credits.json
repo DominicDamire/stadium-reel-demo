@@ -761,5 +761,89 @@
   "image": "https://m.media-amazon.com/images/M/MV5BMjMzOTYwODY4NF5BMl5BanBnXkFtZTgwNzI2ODY4NTE@._V1_UY512_.jpg",
   "resolution": "hd",
   "licence": "unlicensed-owner-accepted"
+ },
+ "stephen-curry": {
+  "name": "Stephen Curry",
+  "file": "File:Stephen_Curry_30.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Stephen_Curry_30.jpg",
+  "author": "El Viejas God",
+  "licence": "CC0"
+ },
+ "50-cent": {
+  "name": "50 Cent",
+  "file": "File:Curtis_\"50_Cent\"_Jackson_visits_Barksdale_AFB_(5)_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Curtis_%2250_Cent%22_Jackson_visits_Barksdale_AFB_(5)_(cropped).jpg",
+  "author": "Senior Airman Nia Jacobs",
+  "licence": "Public domain"
+ },
+ "islam-makhachev": {
+  "name": "Islam Makhachev",
+  "file": "File:Islam_Makhachev_and_Sergey_Melikov_2025_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Islam_Makhachev_and_Sergey_Melikov_2025_(cropped).jpg",
+  "author": "Unknown authorUnknown author",
+  "licence": "CC BY 3.0"
+ },
+ "dwayne-johnson": {
+  "name": "Dwayne Johnson",
+  "file": "File:Dwayne_Johnson-1764_(4x5_cropped_with_moderate_headroom).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Dwayne_Johnson-1764_(4x5_cropped_with_moderate_headroom).jpg",
+  "author": "Harald Krichel",
+  "licence": "CC BY-SA 4.0"
+ },
+ "tom-cruise": {
+  "name": "Tom Cruise",
+  "file": "File:Tom_Cruise_at_53rd_Saturn_Awards_2026-01.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Tom_Cruise_at_53rd_Saturn_Awards_2026-01.jpg",
+  "author": "Kevin Paul",
+  "licence": "CC BY 4.0"
+ },
+ "brad-pitt": {
+  "name": "Brad Pitt",
+  "file": "File:Brad_Pitt-69858.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Brad_Pitt-69858.jpg",
+  "author": "Harald Krichel",
+  "licence": "CC BY-SA 4.0"
+ },
+ "will-smith": {
+  "name": "Will Smith",
+  "file": "File:TechCrunch_Disrupt_San_Francisco_2019_-_Day_1_(48834070763)_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_San_Francisco_2019_-_Day_1_(48834070763)_(cropped).jpg",
+  "author": "TechCrunch",
+  "licence": "CC BY 2.0"
+ },
+ "jason-statham": {
+  "name": "Jason Statham",
+  "file": "File:Jason_Statham_2018.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Jason_Statham_2018.jpg",
+  "author": "MTV International",
+  "licence": "CC BY 3.0"
+ },
+ "travis-scott": {
+  "name": "Travis Scott",
+  "file": "File:Travis Scott - Openair Frauenfeld 2019 08.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Travis_Scott_-_Openair_Frauenfeld_2019_08.jpg",
+  "author": "Frank Schwichtenberg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "conor-mcgregor": {
+  "name": "Conor McGregor",
+  "file": "File:Conor McGregor, UFC 189 World Tour London (2).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Conor_McGregor,_UFC_189_World_Tour_London_(2).jpg",
+  "author": "Andrius Petrucenia on Flickr (Original version)  UCinternational (Crop)",
+  "licence": "CC BY-SA 2.0"
+ },
+ "keanu-reeves": {
+  "name": "Keanu Reeves",
+  "file": "File:Keanu Reeves 2019 (cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Keanu_Reeves_2019_(cropped).jpg",
+  "author": "Governo do Estado de São Paulo",
+  "licence": "CC BY 2.0"
+ },
+ "robert-downey-jr": {
+  "name": "Robert Downey Jr.",
+  "file": "File:Robert Downey Jr. - 2019 Disney Legends Awards Ceremony - D23 EXPO 2019.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Robert_Downey_Jr._-_2019_Disney_Legends_Awards_Ceremony_-_D23_EXPO_2019.jpg",
+  "author": "nagi usano",
+  "licence": "CC BY-SA 2.0"
  }
 }
