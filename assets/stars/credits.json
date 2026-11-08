@@ -127,11 +127,10 @@
  },
  "kimmich": {
   "name": "Joshua Kimmich",
-  "page": "https://www.theguardian.com/football/ng-interactive/2020/dec/21/the-100-best-male-footballers-in-the-world-2020",
-  "source": "The Guardian 100 best male footballers 2020",
-  "image": "owner saved page copy: The 100 best male footballers in the world 2020 _ Football _ The Guardian_files/500(14).jpg (grid cell, 500x500)",
-  "guardian_rank": 11,
-  "licence": "unlicensed-owner-accepted"
+  "file": "File:Joshua_Kimmich_Ecuador_v_Germany_25_June_2026-149.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Joshua_Kimmich_Ecuador_v_Germany_25_June_2026-149.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
  },
  "benzema": {
   "name": "Karim Benzema",
@@ -583,6 +582,335 @@
   "file": "File:Xavi Hernandez.jpg",
   "source": "https://commons.wikimedia.org/wiki/File:Xavi_Hernandez.jpg",
   "author": "Doha Stadium Plus Qatar",
+  "licence": "CC BY 2.0"
+ },
+ "cruyff": {
+  "name": "Johan Cruyff",
+  "file": "File:Johan_Cruijff_(1974).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Johan_Cruijff_(1974).jpg",
+  "author": "Rob Mieremet / Anefo",
+  "licence": "CC0"
+ },
+ "beckenbauer": {
+  "name": "Franz Beckenbauer",
+  "file": "File:Franz_Beckenbauer_(1975).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Franz_Beckenbauer_(1975).jpg",
+  "author": "Panini Group",
+  "licence": "Public domain"
+ },
+ "yashin": {
+  "name": "Lev Yashin",
+  "file": "File:LevYashin.JPG",
+  "source": "https://commons.wikimedia.org/wiki/File:LevYashin.JPG",
+  "author": "Kroon, Ron for Anefo",
+  "licence": "CC BY-SA 3.0 nl"
+ },
+ "van-basten": {
+  "name": "Marco van Basten",
+  "file": "File:Marco_van_Basten_(2)_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Marco_van_Basten_(2)_(cropped).jpg",
+  "author": "Paul Blank",
+  "licence": "CC BY 2.5"
+ },
+ "eusebio": {
+  "name": "Eusébio",
+  "file": "File:Eusebio_en_1973.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Eusebio_en_1973.jpg",
+  "author": "Panini",
+  "licence": "Public domain"
+ },
+ "best": {
+  "name": "George Best",
+  "file": "File:George_best_1976.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:George_best_1976.jpg",
+  "author": "Bert Verhoeff for Anefo \n\n, NL-HaNA, ANEFO / neg. stroken, 1945-1989",
+  "licence": "CC0"
+ },
+ "charlton": {
+  "name": "Bobby Charlton",
+  "file": "File:LondonHouseAmsterdam1966_Bobby_Charlton.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:LondonHouseAmsterdam1966_Bobby_Charlton.jpg",
+  "author": "ANEFO",
+  "licence": "CC0"
+ },
+ "figo": {
+  "name": "Luís Figo",
+  "file": "File:Luis_Figo_2023.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Luis_Figo_2023.jpg",
+  "author": "Žan Kolman",
+  "licence": "Public domain"
+ },
+ "shevchenko": {
+  "name": "Andriy Shevchenko",
+  "file": "File:Andriy_Shevchenko_Volia_Space_03_(cropped).png",
+  "source": "https://commons.wikimedia.org/wiki/File:Andriy_Shevchenko_Volia_Space_03_(cropped).png",
+  "author": "Міністерство молоді та спорту України",
+  "licence": "CC BY 4.0"
+ },
+ "del-piero": {
+  "name": "Alessandro Del Piero",
+  "file": "File:25th_Laureus_World_Sports_Awards_-_Alessandro_Del_Piero_-_240421_155220_(cropped)_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:25th_Laureus_World_Sports_Awards_-_Alessandro_Del_Piero_-_240421_155220_(cropped)_(cropped).jpg",
+  "author": "Barcex",
+  "licence": "CC BY-SA 4.0"
+ },
+ "raul": {
+  "name": "Raúl",
+  "file": "File:25th_Laureus_World_Sports_Awards_-_Raúl_-_240422_132916-2_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:25th_Laureus_World_Sports_Awards_-_Ra%C3%BAl_-_240422_132916-2_(cropped).jpg",
+  "author": "Barcex",
+  "licence": "CC BY-SA 4.0"
+ },
+ "matthaus": {
+  "name": "Lothar Matthäus",
+  "file": "File:2019_Lothar_Matthäus.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:2019_Lothar_Matth%C3%A4us.jpg",
+  "author": "Steffen Prößdorf",
+  "licence": "CC BY-SA 4.0"
+ },
+ "cafu": {
+  "name": "Cafu",
+  "file": "File:Cafu_-_26.02.2026_-_Cerimônia_de_apresentação_das_taças_da_Copa_do_Mundo_de_2026.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Cafu_-_26.02.2026_-_Cerim%C3%B4nia_de_apresenta%C3%A7%C3%A3o_das_ta%C3%A7as_da_Copa_do_Mundo_de_2026.jpg",
+  "author": "Lula Oficial",
+  "licence": "CC BY-SA 4.0"
+ },
+ "romario": {
+  "name": "Romário",
+  "file": "File:Senadores_da_57ª_Legislatura_(52689451805)_(cropped_-_3x4).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_(52689451805)_(cropped_-_3x4).jpg",
+  "author": "Agência Senado from Brasilia, Brazil",
+  "licence": "CC BY 2.0"
+ },
+ "rivaldo": {
+  "name": "Rivaldo",
+  "file": "File:Rivaldo.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Rivaldo.jpg",
+  "author": "Laura Cortizo/Portal da Copa",
+  "licence": "CC BY 3.0 br"
+ },
+ "cannavaro": {
+  "name": "Fabio Cannavaro",
+  "file": "File:Fabio_Cannavaro_2011.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Fabio_Cannavaro_2011.jpg",
+  "author": "Doha Stadium Plus Qatar",
+  "licence": "CC BY 2.0"
+ },
+ "lahm": {
+  "name": "Philipp Lahm",
+  "file": "File:Philipp_Lahm_auf_der_Berlinale_2024,_Ausschnitt.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Philipp_Lahm_auf_der_Berlinale_2024,_Ausschnitt.jpg",
+  "author": "Elena Ternovaja",
+  "licence": "CC BY-SA 3.0"
+ },
+ "robben": {
+  "name": "Arjen Robben",
+  "file": "File:2019147183036_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_München_-_Sven_-_1D_X_MK_II_-_0196_-_B70I8495_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:2019147183036_2019-05-27_Fussball_1.FC_Kaiserslautern_vs_FC_Bayern_M%C3%BCnchen_-_Sven_-_1D_X_MK_II_-_0196_-_B70I8495_(cropped).jpg",
+  "author": "Sven Mandel",
+  "licence": "CC BY-SA 4.0"
+ },
+ "ribery": {
+  "name": "Franck Ribéry",
+  "file": "File:Franck_Ribery_2019_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Franck_Ribery_2019_(cropped).jpg",
+  "author": "Sven Mandel",
+  "licence": "CC BY-SA 4.0"
+ },
+ "nedved": {
+  "name": "Pavel Nedvěd",
+  "file": "File:Pavel_Nedvěd.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Pavel_Nedv%C4%9Bd.jpg",
+  "author": "Pavel Lebeda",
+  "licence": "CC BY-SA 2.0"
+ },
+ "ballack": {
+  "name": "Michael Ballack",
+  "file": "File:10._Tag_der_Legenden_2014_69.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:10._Tag_der_Legenden_2014_69.jpg",
+  "author": "Die Bildermacherei Cuxhaven, Kerstin Tietje",
+  "licence": "CC BY-SA 4.0"
+ },
+ "courtois": {
+  "name": "Thibaut Courtois",
+  "file": "File:Thibaut_Courtois_Belgium_v_USA_6_July_2026-076_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Thibaut_Courtois_Belgium_v_USA_6_July_2026-076_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "rodrygo": {
+  "name": "Rodrygo",
+  "file": "File:Rodrygo_2023_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Rodrygo_2023_(cropped).jpg",
+  "author": "Junta de Andalucía",
+  "licence": "CC BY-SA 2.0"
+ },
+ "tchouameni": {
+  "name": "Aurélien Tchouaméni",
+  "file": "File:Aurelien_Tchouameni_France_v_Senegal_16_June_2026-447_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Aurelien_Tchouameni_France_v_Senegal_16_June_2026-447_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "camavinga": {
+  "name": "Eduardo Camavinga",
+  "file": "File:Ofrenda_de_la_Liga_y_la_Champions-13-L.Millán_(52109790215)_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ofrenda_de_la_Liga_y_la_Champions-13-L.Mill%C3%A1n_(52109790215)_(cropped).jpg",
+  "author": "Fotografías Archimadrid.es",
+  "licence": "CC BY 2.0"
+ },
+ "gavi": {
+  "name": "Gavi",
+  "file": "File:Gavi_Argentina_v_Spain_19_July_2026-013.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Gavi_Argentina_v_Spain_19_July_2026-013.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "de-jong": {
+  "name": "Frenkie de Jong",
+  "file": "File:Frenkie_De_Jong_(2025)_(cropped).png",
+  "source": "https://commons.wikimedia.org/wiki/File:Frenkie_De_Jong_(2025)_(cropped).png",
+  "author": "Unknown authorUnknown author",
+  "licence": "CC BY 4.0"
+ },
+ "ter-stegen": {
+  "name": "Marc-André ter Stegen",
+  "file": "File:Marc-Andre_Ter_Stegen_ACCI_FCBARCELONA_Turisme_Catalunya_gira_pretemporada_CATPRESS.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Marc-Andre_Ter_Stegen_ACCI_FCBARCELONA_Turisme_Catalunya_gira_pretemporada_CATPRESS.jpg",
+  "author": "Government of Catalonia",
+  "licence": "CC0"
+ },
+ "bernardo-silva": {
+  "name": "Bernardo Silva",
+  "file": "File:Bernardo_Silva_Croatia_v_Portugal_2_July_2026-238.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Bernardo_Silva_Croatia_v_Portugal_2_July_2026-238.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "ruben-dias": {
+  "name": "Rúben Dias",
+  "file": "File:Ruben_Dias_Croatia_v_Portugal_2_July_2026-228_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ruben_Dias_Croatia_v_Portugal_2_July_2026-228_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "donnarumma": {
+  "name": "Gianluigi Donnarumma",
+  "file": "File:Norway_Italy_-_June_2025_A_17_(Gianluigi_Donnarumma).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Norway_Italy_-_June_2025_A_17_(Gianluigi_Donnarumma).jpg",
+  "author": "MichaelEmilio",
+  "licence": "CC BY 4.0"
+ },
+ "gvardiol": {
+  "name": "Joško Gvardiol",
+  "file": "File:Josko_Gvardiol_Croatia_v_Portugal_2_July_2026-262.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Josko_Gvardiol_Croatia_v_Portugal_2_July_2026-262.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "saliba": {
+  "name": "William Saliba",
+  "file": "File:William_Saliba_France_v_Paraguay_4_July_2026-183.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:William_Saliba_France_v_Paraguay_4_July_2026-183.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "havertz": {
+  "name": "Kai Havertz",
+  "file": "File:Kai_Havertz_Ecuador_v_Germany_25_June_2026-118.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Kai_Havertz_Ecuador_v_Germany_25_June_2026-118.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "martinelli": {
+  "name": "Gabriel Martinelli",
+  "file": "File:Gabriel_Martinelli_Brazil_V_Morocco_13_June_2026-144.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Gabriel_Martinelli_Brazil_V_Morocco_13_June_2026-144.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "olise": {
+  "name": "Michael Olise",
+  "file": "File:Michael_Olise_France_v_Senegal_16_June_2026-307_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Michael_Olise_France_v_Senegal_16_June_2026-307_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "sane": {
+  "name": "Leroy Sané",
+  "file": "File:Leroy_Sane_Ecuador_v_Germany_25_June_2026-119_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Leroy_Sane_Ecuador_v_Germany_25_June_2026-119_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "leao": {
+  "name": "Rafael Leão",
+  "file": "File:Rafael_Leao_Croatia_v_Portugal_2_July_2026-187_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Rafael_Leao_Croatia_v_Portugal_2_July_2026-187_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "barella": {
+  "name": "Nicolò Barella",
+  "file": "File:Nicolò_Barella_in_2021_(cropped_2).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Nicol%C3%B2_Barella_in_2021_(cropped_2).jpg",
+  "author": "Biser Todorov",
+  "licence": "CC BY 4.0"
+ },
+ "szoboszlai": {
+  "name": "Dominik Szoboszlai",
+  "file": "File:Dominik_Szoboszlai_04012026_(1).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Dominik_Szoboszlai_04012026_(1).jpg",
+  "author": "Timmy96",
+  "licence": "CC0"
+ },
+ "mac-allister": {
+  "name": "Alexis Mac Allister",
+  "file": "File:Alexis_Mac_Allister_Argentina_v_Spain_19_July_2026-162_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Alexis_Mac_Allister_Argentina_v_Spain_19_July_2026-162_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "caicedo": {
+  "name": "Moisés Caicedo",
+  "file": "File:Moises_Caicedo_Ecuador_v_Germany_25_June_2026-051_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Moises_Caicedo_Ecuador_v_Germany_25_June_2026-051_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "vitinha": {
+  "name": "Vitinha",
+  "file": "File:Vitinha_USMNT_v_Portugal_Mar_31_2026-50_(cropped).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Vitinha_USMNT_v_Portugal_Mar_31_2026-50_(cropped).jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "doue": {
+  "name": "Désiré Doué",
+  "file": "File:Desire_Doue_France_v_Senegal_16_June_2026-264.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Desire_Doue_France_v_Senegal_16_June_2026-264.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "rashford": {
+  "name": "Marcus Rashford",
+  "file": "File:Marcus_Rashford_England_v_Ghana_23_June_2026-073.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Marcus_Rashford_England_v_Ghana_23_June_2026-073.jpg",
+  "author": "Bryan Berlin",
+  "licence": "CC BY-SA 4.0"
+ },
+ "schmeichel": {
+  "name": "Peter Schmeichel",
+  "file": "File:Peter_Schmeichel_2012-01-25_001.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Peter_Schmeichel_2012-01-25_001.jpg",
+  "author": "Carlsberg",
+  "licence": "CC BY 3.0"
+ },
+ "gullit": {
+  "name": "Ruud Gullit",
+  "file": "File:Ruud Gullit 2012.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ruud_Gullit_2012.jpg",
+  "author": "Doha Stadium Plus Qatar from Doha, Qatar",
   "licence": "CC BY 2.0"
  }
 }
