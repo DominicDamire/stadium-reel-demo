@@ -18,7 +18,7 @@ This repo holds only the built, minified static demo. The source lives in a priv
 - Sectors sized by fan count, seat picking, seat map, VIP lounges
 - Rewards ladder with ranks, club crests, kits and shirt crests
 - Celebrities (lounge) and footballer legends (ring) with photos
-- Space scene by default (Saturn and Jupiter), or the city scene
+- Space scene by default (Earth), or the city scene
 - Russian, English and other UI languages (`?lang=`)
 - First-paint loader (pure CSS/SVG, about 8 KB inline): real byte-based progress, fades into the first rendered frame, honours `prefers-reduced-motion`
 
