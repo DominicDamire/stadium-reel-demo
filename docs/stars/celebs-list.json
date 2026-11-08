@@ -56,6 +56,209 @@
   "knownFor": "Iron Man"
  },
  {
+  "group": "actors",
+  "rank": 9,
+  "name": "Daniel Day-Lewis",
+  "slug": "daniel-day-lewis",
+  "knownFor": "There Will Be Blood"
+ },
+ {
+  "group": "actors",
+  "rank": 10,
+  "name": "Al Pacino",
+  "slug": "al-pacino",
+  "knownFor": "The Godfather"
+ },
+ {
+  "group": "actors",
+  "rank": 11,
+  "name": "Jack Nicholson",
+  "slug": "jack-nicholson",
+  "knownFor": "One Flew Over the Cuckoo's Nest"
+ },
+ {
+  "group": "actors",
+  "rank": 12,
+  "name": "Dustin Hoffman",
+  "slug": "dustin-hoffman",
+  "knownFor": "The Graduate"
+ },
+ {
+  "group": "actors",
+  "rank": 13,
+  "name": "Marlon Brando",
+  "slug": "marlon-brando",
+  "knownFor": "The Godfather"
+ },
+ {
+  "group": "actors",
+  "rank": 14,
+  "name": "Robert De Niro",
+  "slug": "robert-de-niro",
+  "knownFor": "Taxi Driver"
+ },
+ {
+  "group": "actors",
+  "rank": 15,
+  "name": "Tom Hanks",
+  "slug": "tom-hanks",
+  "knownFor": "Forrest Gump"
+ },
+ {
+  "group": "actors",
+  "rank": 16,
+  "name": "Denzel Washington",
+  "slug": "denzel-washington",
+  "knownFor": "Training Day"
+ },
+ {
+  "group": "actors",
+  "rank": 17,
+  "name": "Michael Douglas",
+  "slug": "michael-douglas",
+  "knownFor": "Wall Street"
+ },
+ {
+  "group": "actors",
+  "rank": 18,
+  "name": "Steve McQueen",
+  "slug": "steve-mcqueen",
+  "knownFor": "The Great Escape"
+ },
+ {
+  "group": "actors",
+  "rank": 19,
+  "name": "Paul Newman",
+  "slug": "paul-newman",
+  "knownFor": "Butch Cassidy and the Sundance Kid"
+ },
+ {
+  "group": "actors",
+  "rank": 20,
+  "name": "Russell Crowe",
+  "slug": "russell-crowe",
+  "knownFor": "Gladiator"
+ },
+ {
+  "group": "actors",
+  "rank": 21,
+  "name": "Harrison Ford",
+  "slug": "harrison-ford",
+  "knownFor": "Indiana Jones"
+ },
+ {
+  "group": "actors",
+  "rank": 22,
+  "name": "Sean Penn",
+  "slug": "sean-penn",
+  "knownFor": "Mystic River"
+ },
+ {
+  "group": "actors",
+  "rank": 23,
+  "name": "Jeremy Irons",
+  "slug": "jeremy-irons",
+  "knownFor": "Dead Ringers"
+ },
+ {
+  "group": "actors",
+  "rank": 24,
+  "name": "Philip Seymour Hoffman",
+  "slug": "philip-seymour-hoffman",
+  "knownFor": "Capote"
+ },
+ {
+  "group": "actors",
+  "rank": 25,
+  "name": "Kevin Spacey",
+  "slug": "kevin-spacey",
+  "knownFor": "American Beauty"
+ },
+ {
+  "group": "actors",
+  "rank": 26,
+  "name": "Anthony Hopkins",
+  "slug": "anthony-hopkins",
+  "knownFor": "The Silence of the Lambs"
+ },
+ {
+  "group": "actors",
+  "rank": 27,
+  "name": "Gene Hackman",
+  "slug": "gene-hackman",
+  "knownFor": "The French Connection"
+ },
+ {
+  "group": "actors",
+  "rank": 28,
+  "name": "Gregory Peck",
+  "slug": "gregory-peck",
+  "knownFor": "To Kill a Mockingbird"
+ },
+ {
+  "group": "actors",
+  "rank": 29,
+  "name": "James Stewart",
+  "slug": "james-stewart",
+  "knownFor": "It's a Wonderful Life"
+ },
+ {
+  "group": "actors",
+  "rank": 30,
+  "name": "Charlton Heston",
+  "slug": "charlton-heston",
+  "knownFor": "Ben-Hur"
+ },
+ {
+  "group": "actors",
+  "rank": 31,
+  "name": "James Dean",
+  "slug": "james-dean",
+  "knownFor": "Rebel Without a Cause"
+ },
+ {
+  "group": "actors",
+  "rank": 32,
+  "name": "Kirk Douglas",
+  "slug": "kirk-douglas",
+  "knownFor": "Spartacus"
+ },
+ {
+  "group": "actors",
+  "rank": 33,
+  "name": "Humphrey Bogart",
+  "slug": "humphrey-bogart",
+  "knownFor": "Casablanca"
+ },
+ {
+  "group": "actors",
+  "rank": 34,
+  "name": "Henry Fonda",
+  "slug": "henry-fonda",
+  "knownFor": "12 Angry Men"
+ },
+ {
+  "group": "actors",
+  "rank": 35,
+  "name": "Jack Lemmon",
+  "slug": "jack-lemmon",
+  "knownFor": "Some Like It Hot"
+ },
+ {
+  "group": "actors",
+  "rank": 36,
+  "name": "Alec Guinness",
+  "slug": "alec-guinness",
+  "knownFor": "Star Wars"
+ },
+ {
+  "group": "actors",
+  "rank": 37,
+  "name": "Liam Neeson",
+  "slug": "liam-neeson",
+  "knownFor": "Schindler's List"
+ },
+ {
   "group": "rappers",
   "rank": 1,
   "name": "Drake",
@@ -110,6 +313,167 @@
   "name": "Dr. Dre",
   "slug": "dr-dre",
   "knownFor": "The Chronic"
+ },
+ {
+  "group": "rappers",
+  "rank": 9,
+  "name": "The Notorious B.I.G.",
+  "slug": "the-notorious-b-i-g",
+  "knownFor": "Ready to Die"
+ },
+ {
+  "group": "rappers",
+  "rank": 10,
+  "name": "Nas",
+  "slug": "nas",
+  "knownFor": "Illmatic"
+ },
+ {
+  "group": "rappers",
+  "rank": 11,
+  "name": "Tupac Shakur",
+  "slug": "tupac-shakur",
+  "knownFor": "All Eyez on Me"
+ },
+ {
+  "group": "rappers",
+  "rank": 12,
+  "name": "Rakim",
+  "slug": "rakim",
+  "knownFor": "Paid in Full (Eric B. & Rakim)"
+ },
+ {
+  "group": "rappers",
+  "rank": 13,
+  "name": "Run-D.M.C.",
+  "slug": "run-d-m-c",
+  "knownFor": "Walk This Way"
+ },
+ {
+  "group": "rappers",
+  "rank": 14,
+  "name": "Big Daddy Kane",
+  "slug": "big-daddy-kane",
+  "knownFor": "Long Live the Kane"
+ },
+ {
+  "group": "rappers",
+  "rank": 15,
+  "name": "Nelly",
+  "slug": "nelly",
+  "knownFor": "Country Grammar"
+ },
+ {
+  "group": "rappers",
+  "rank": 16,
+  "name": "André 3000",
+  "slug": "andre-3000",
+  "knownFor": "Hey Ya! (OutKast)"
+ },
+ {
+  "group": "rappers",
+  "rank": 17,
+  "name": "Tariq Trotter",
+  "slug": "tariq-trotter",
+  "knownFor": "Black Thought of The Roots"
+ },
+ {
+  "group": "rappers",
+  "rank": 18,
+  "name": "Scarface",
+  "slug": "scarface",
+  "knownFor": "Mr. Scarface Is Back"
+ },
+ {
+  "group": "rappers",
+  "rank": 19,
+  "name": "The GZA",
+  "slug": "the-gza",
+  "knownFor": "Liquid Swords"
+ },
+ {
+  "group": "rappers",
+  "rank": 20,
+  "name": "Ye",
+  "slug": "ye",
+  "knownFor": "My Beautiful Dark Twisted Fantasy"
+ },
+ {
+  "group": "rappers",
+  "rank": 21,
+  "name": "Eazy-E",
+  "slug": "eazy-e",
+  "knownFor": "Straight Outta Compton (N.W.A)"
+ },
+ {
+  "group": "rappers",
+  "rank": 22,
+  "name": "KRS-One",
+  "slug": "krs-one",
+  "knownFor": "Criminal Minded"
+ },
+ {
+  "group": "rappers",
+  "rank": 23,
+  "name": "Yasiin Bey",
+  "slug": "yasiin-bey",
+  "knownFor": "Black on Both Sides"
+ },
+ {
+  "group": "rappers",
+  "rank": 24,
+  "name": "Lauryn Hill",
+  "slug": "lauryn-hill",
+  "knownFor": "The Miseducation of Lauryn Hill"
+ },
+ {
+  "group": "rappers",
+  "rank": 25,
+  "name": "Chuck D",
+  "slug": "chuck-d",
+  "knownFor": "It Takes a Nation of Millions (Public Enemy)"
+ },
+ {
+  "group": "rappers",
+  "rank": 26,
+  "name": "Lil' Wayne",
+  "slug": "lil-wayne",
+  "knownFor": "Tha Carter III"
+ },
+ {
+  "group": "rappers",
+  "rank": 27,
+  "name": "Common",
+  "slug": "common",
+  "knownFor": "Like Water for Chocolate"
+ },
+ {
+  "group": "rappers",
+  "rank": 28,
+  "name": "Slick Rick",
+  "slug": "slick-rick",
+  "knownFor": "The Great Adventures of Slick Rick"
+ },
+ {
+  "group": "rappers",
+  "rank": 29,
+  "name": "Ice Cube",
+  "slug": "ice-cube",
+  "knownFor": "AmeriKKKa's Most Wanted"
+ },
+ {
+  "group": "rappers",
+  "rank": 30,
+  "name": "Pharoahe Monch",
+  "slug": "pharoahe-monch",
+  "knownFor": "Simon Says"
+ },
+ {
+  "group": "rappers",
+  "rank": 31,
+  "name": "Ghostface Killah",
+  "slug": "ghostface-killah",
+  "knownFor": "Supreme Clientele"
  },
  {
   "group": "basketball",
@@ -168,6 +532,139 @@
   "knownFor": "San Antonio Spurs"
  },
  {
+  "group": "basketball",
+  "rank": 9,
+  "name": "Kareem Abdul-Jabbar",
+  "slug": "kareem-abdul-jabbar",
+  "knownFor": "Los Angeles Lakers"
+ },
+ {
+  "group": "basketball",
+  "rank": 10,
+  "name": "Wilt Chamberlain",
+  "slug": "wilt-chamberlain",
+  "knownFor": "Philadelphia 76ers"
+ },
+ {
+  "group": "basketball",
+  "rank": 11,
+  "name": "Karl Malone",
+  "slug": "karl-malone",
+  "knownFor": "Utah Jazz"
+ },
+ {
+  "group": "basketball",
+  "rank": 12,
+  "name": "Hakeem Olajuwon",
+  "slug": "hakeem-olajuwon",
+  "knownFor": "Houston Rockets"
+ },
+ {
+  "group": "basketball",
+  "rank": 13,
+  "name": "Julius Erving",
+  "slug": "julius-erving",
+  "knownFor": "Philadelphia 76ers"
+ },
+ {
+  "group": "basketball",
+  "rank": 14,
+  "name": "Bill Russell",
+  "slug": "bill-russell",
+  "knownFor": "Boston Celtics"
+ },
+ {
+  "group": "basketball",
+  "rank": 15,
+  "name": "Tim Duncan",
+  "slug": "tim-duncan",
+  "knownFor": "San Antonio Spurs"
+ },
+ {
+  "group": "basketball",
+  "rank": 16,
+  "name": "Kevin Garnett",
+  "slug": "kevin-garnett",
+  "knownFor": "Minnesota Timberwolves"
+ },
+ {
+  "group": "basketball",
+  "rank": 17,
+  "name": "Nikola Jokic",
+  "slug": "nikola-jokic",
+  "knownFor": "Denver Nuggets"
+ },
+ {
+  "group": "basketball",
+  "rank": 18,
+  "name": "Moses Malone",
+  "slug": "moses-malone",
+  "knownFor": "Philadelphia 76ers"
+ },
+ {
+  "group": "basketball",
+  "rank": 19,
+  "name": "David Robinson",
+  "slug": "david-robinson",
+  "knownFor": "San Antonio Spurs"
+ },
+ {
+  "group": "basketball",
+  "rank": 20,
+  "name": "Anthony Davis",
+  "slug": "anthony-davis",
+  "knownFor": "Los Angeles Lakers"
+ },
+ {
+  "group": "basketball",
+  "rank": 21,
+  "name": "Patrick Ewing",
+  "slug": "patrick-ewing",
+  "knownFor": "New York Knicks"
+ },
+ {
+  "group": "basketball",
+  "rank": 22,
+  "name": "John Stockton",
+  "slug": "john-stockton",
+  "knownFor": "Utah Jazz"
+ },
+ {
+  "group": "basketball",
+  "rank": 23,
+  "name": "Dwight Howard",
+  "slug": "dwight-howard",
+  "knownFor": "Orlando Magic"
+ },
+ {
+  "group": "basketball",
+  "rank": 24,
+  "name": "James Harden",
+  "slug": "james-harden",
+  "knownFor": "Houston Rockets"
+ },
+ {
+  "group": "basketball",
+  "rank": 25,
+  "name": "Magic Johnson",
+  "slug": "magic-johnson",
+  "knownFor": "Los Angeles Lakers"
+ },
+ {
+  "group": "basketball",
+  "rank": 26,
+  "name": "Chris Paul",
+  "slug": "chris-paul",
+  "knownFor": "Los Angeles Clippers"
+ },
+ {
+  "group": "basketball",
+  "rank": 27,
+  "name": "Charles Barkley",
+  "slug": "charles-barkley",
+  "knownFor": "Phoenix Suns"
+ },
+ {
   "group": "mma",
   "rank": 1,
   "name": "Khabib Nurmagomedov",
@@ -222,5 +719,131 @@
   "name": "Georges St-Pierre",
   "slug": "georges-st-pierre",
   "knownFor": "UFC · Welterweight"
+ },
+ {
+  "group": "mma",
+  "rank": 9,
+  "name": "Anderson Silva",
+  "slug": "anderson-silva",
+  "knownFor": "UFC · Middleweight"
+ },
+ {
+  "group": "mma",
+  "rank": 10,
+  "name": "Demetrious Johnson",
+  "slug": "demetrious-johnson",
+  "knownFor": "UFC · Flyweight"
+ },
+ {
+  "group": "mma",
+  "rank": 11,
+  "name": "José Aldo",
+  "slug": "jose-aldo",
+  "knownFor": "UFC · Featherweight"
+ },
+ {
+  "group": "mma",
+  "rank": 12,
+  "name": "Stipe Miocic",
+  "slug": "stipe-miocic",
+  "knownFor": "UFC · Heavyweight"
+ },
+ {
+  "group": "mma",
+  "rank": 13,
+  "name": "Daniel Cormier",
+  "slug": "daniel-cormier",
+  "knownFor": "UFC · Light Heavyweight"
+ },
+ {
+  "group": "mma",
+  "rank": 14,
+  "name": "Kamaru Usman",
+  "slug": "kamaru-usman",
+  "knownFor": "UFC · Welterweight"
+ },
+ {
+  "group": "mma",
+  "rank": 15,
+  "name": "Randy Couture",
+  "slug": "randy-couture",
+  "knownFor": "UFC · Heavyweight"
+ },
+ {
+  "group": "mma",
+  "rank": 16,
+  "name": "Chuck Liddell",
+  "slug": "chuck-liddell",
+  "knownFor": "UFC · Light Heavyweight"
+ },
+ {
+  "group": "mma",
+  "rank": 17,
+  "name": "Alex Volkanovski",
+  "slug": "alex-volkanovski",
+  "knownFor": "UFC · Featherweight"
+ },
+ {
+  "group": "mma",
+  "rank": 18,
+  "name": "Amanda Nunes",
+  "slug": "amanda-nunes",
+  "knownFor": "UFC · Bantamweight"
+ },
+ {
+  "group": "mma",
+  "rank": 19,
+  "name": "Dominick Cruz",
+  "slug": "dominick-cruz",
+  "knownFor": "UFC · Bantamweight"
+ },
+ {
+  "group": "mma",
+  "rank": 20,
+  "name": "Henry Cejudo",
+  "slug": "henry-cejudo",
+  "knownFor": "UFC · Flyweight"
+ },
+ {
+  "group": "mma",
+  "rank": 21,
+  "name": "T.J. Dillashaw",
+  "slug": "t-j-dillashaw",
+  "knownFor": "UFC · Bantamweight"
+ },
+ {
+  "group": "mma",
+  "rank": 22,
+  "name": "Max Holloway",
+  "slug": "max-holloway",
+  "knownFor": "UFC · Featherweight"
+ },
+ {
+  "group": "mma",
+  "rank": 23,
+  "name": "Charles Oliveira",
+  "slug": "charles-oliveira",
+  "knownFor": "UFC · Lightweight"
+ },
+ {
+  "group": "mma",
+  "rank": 24,
+  "name": "Tyron Woodley",
+  "slug": "tyron-woodley",
+  "knownFor": "UFC · Welterweight"
+ },
+ {
+  "group": "mma",
+  "rank": 25,
+  "name": "Chris Weidman",
+  "slug": "chris-weidman",
+  "knownFor": "UFC · Middleweight"
+ },
+ {
+  "group": "mma",
+  "rank": 26,
+  "name": "Ronda Rousey",
+  "slug": "ronda-rousey",
+  "knownFor": "UFC · Women's Bantamweight"
  }
 ]
