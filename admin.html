@@ -42,6 +42,18 @@
   #signin button{flex:1 1 100%}
   dialog{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:var(--r);width:min(92vw,420px)}
   dialog::backdrop{background:#000a}
+  .tabs{display:flex;gap:8px;margin-top:12px}
+  .tabs button[aria-selected="true"]{background:var(--acc);color:#fff}
+  .tabs button[aria-selected="false"]{background:transparent;border-color:var(--line);color:var(--ink)}
+  #shot{display:block}
+  .chk{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0 0 8px}
+  .chk label{display:flex;align-items:center;gap:6px;margin:0;color:var(--ink);font-size:14px;min-height:32px}
+  .chk input{flex:none;min-height:0;width:18px;height:18px}
+  .fld{flex:1 1 140px;min-width:0}
+  .fld>select,.fld>input{width:100%}
+  #shoturl{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:#0e121b;border:1px solid var(--line);border-radius:10px;padding:8px}
+  #stars td:first-child{width:32px}
+  #cprev{width:128px;height:128px;border-radius:10px;border:1px solid var(--line);background:repeating-conic-gradient(#222 0 25%,#333 0 50%) 0 0/16px 16px;object-fit:contain}
   [hidden]{display:none!important}
   /* fan votes (admin-fan.js) */
   .dq,.bn{border-top:1px solid var(--line);padding:10px 0}
@@ -72,6 +84,7 @@
     <p class="out" data-o="claim"></p>
   </section>
 
+  <div class="tabs" id="tabs" role="tablist" hidden><button type="button" role="tab" data-tab="dash" aria-selected="true" data-i="tab.admin">Admin</button><button type="button" role="tab" data-tab="studio" aria-selected="false" data-i="tab.studio">Video studio</button></div>
   <div id="dash" hidden>
     <div class="grid">
       <section class="wide" id="me">
@@ -106,7 +119,7 @@
         <div class="tbl"><table><thead><tr><th>#</th><th data-i="th.user">User</th><th data-i="th.club">Club</th><th data-i="th.seat">Seat</th><th data-i="th.level">Level</th><th data-i="th.photo">Photo</th></tr></thead><tbody id="fans"></tbody></table></div>
       </section>
 
-      <section>
+      <section id="sec-remove">
         <h2 data-i="remove">Remove a fan</h2>
         <form data-f="remove"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button class="danger" data-i="remove.btn">Remove…</button></form>
         <p class="out" data-o="remove"></p>
@@ -119,7 +132,7 @@
         <p class="out" data-o="seat"></p>
       </section>
 
-      <section>
+      <section id="sec-takedown">
         <h2 data-i="takedown">Take down a photo</h2>
         <form data-f="takedown"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button class="danger" data-i="takedown.btn">Take down</button></form>
         <p class="out" data-o="takedown"></p>
@@ -169,6 +182,72 @@
       </section>
     </div>
   </div>
+  <!-- Video studio (docs/admin-commands.md §7): builds stadium links for a video; crest preview (this browser) / publish (everyone) -->
+  <div id="studio" hidden>
+    <div class="grid">
+      <section class="wide">
+        <h2 data-i="st.shot">Shot builder</h2>
+        <form id="shot" onsubmit="return false">
+          <div class="row">
+            <div class="fld"><label for="s-set" data-i="st.set">Club set</label><select id="s-set" name="set"></select></div>
+            <div class="fld"><label for="s-club" data-i="st.club">Club</label><select id="s-club" name="club" data-clubs></select></div>
+            <div class="fld"><label for="s-shot" data-i="st.kind">Shot</label><select id="s-shot" name="shot"></select></div>
+          </div>
+          <div class="row">
+            <div class="fld"><label for="s-mosaic" data-i="st.mosaic">Mosaic image (crowd mosaic only)</label><input id="s-mosaic" name="mosaic" autocomplete="off" spellcheck="false" data-ph="st.mosaicph" placeholder="empty = the club's crest; or a name / star slug / https URL"></div>
+            <div class="fld"><label for="s-t" data-i="st.t">One frame at (seconds, reel shots)</label><input id="s-t" name="t" type="number" min="0" step="0.1" inputmode="decimal" placeholder="—"></div>
+          </div>
+          <div class="row">
+            <div class="fld"><label for="s-lang" data-i="st.lang">Language</label><select id="s-lang" name="lang"><option value="en">English</option><option value="ru">Русский</option><option value="es">Español</option><option value="pt">Português</option><option value="zh">中文</option></select></div>
+            <div class="fld"><label for="s-frame" data-i="st.frame">Frame</label><select id="s-frame" name="frame"><option value="9x16">9:16</option><option value="16x9">16:9</option><option value="1x1">1:1</option><option value="tab" data-i="st.tab">New tab</option></select></div>
+            <div class="fld"><label for="s-crowd" data-i="st.crowd">Crowd</label><select id="s-crowd" name="crowd"><option value="" data-i="st.default">Default</option><option value="calm" data-i="st.calm">Calm</option><option value="lively" data-i="st.lively">Lively</option></select></div>
+          </div>
+          <div class="chk">
+            <label><input type="checkbox" name="players" checked><span data-i="st.players">Footballers</span></label>
+            <label><input type="checkbox" name="celebs" checked><span data-i="st.celebs">Celebrities</span></label>
+            <label><input type="checkbox" name="legends" checked><span data-i="st.legends">Legends</span></label>
+            <label><input type="checkbox" name="boards" checked><span data-i="st.boards">Ad boards</span></label>
+            <label><input type="checkbox" name="tifo" checked><span data-i="st.tifo">Tifo</span></label>
+            <label><input type="checkbox" name="flares" checked><span data-i="st.flares">Flares + fireworks</span></label>
+            <label><input type="checkbox" name="hud" checked><span data-i="st.hud">HUD</span></label>
+            <label><input type="checkbox" name="realfans" checked><span data-i="st.realfans">Real fans</span></label>
+            <label><input type="checkbox" name="hq"><span data-i="st.hq">HQ (hq=1)</span></label>
+            <label><input type="checkbox" name="crestpreview"><span data-i="st.cpv">My preview crests + score</span></label>
+          </div>
+          <div class="row">
+            <div class="fld"><label for="s-demo" data-i="st.demo">Demo fans @demo1… (this preview only)</label><input id="s-demo" name="demofans" type="number" min="0" max="500" inputmode="numeric" placeholder="0"></div>
+            <div class="fld"><label for="s-find" data-i="st.find">Fly to fan</label><input id="s-find" name="find" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="@handle"></div>
+          </div>
+          <label for="starq"><span data-i="st.hide">Hide stars</span> <span class="mute" id="hidecount"></span></label>
+          <div class="row"><input type="search" id="starq" data-ph="st.starq" placeholder="Search a footballer, legend or celebrity" autocomplete="off"><button type="button" class="ghost" id="unhide" data-i="st.unhide">Show all</button></div>
+          <div class="tbl" style="max-height:260px"><table><tbody id="stars"></tbody></table></div>
+        </form>
+        <p class="out" id="shoturl"></p>
+        <div class="row"><button type="button" id="open" data-i="st.open">Open shot</button><button type="button" class="ghost" id="copylink" data-i="st.copy">Copy link</button></div>
+      </section>
+
+      <section>
+        <h2 data-i="st.crest">Change a crest</h2>
+        <div class="row"><select id="c-club" data-clubs aria-label="Club"></select></div>
+        <div class="row" style="align-items:center"><img id="cprev" alt=""><div style="flex:1 1 160px;min-width:0"><input type="file" id="c-file" accept="image/png,image/jpeg,image/webp" style="width:100%"><p class="mute" data-i="st.fileh">PNG, JPEG or WebP. It is cut to 512 px and saved as PNG (≤ 1 MB).</p></div></div>
+        <div class="row">
+          <input id="c-c1" placeholder="#rrggbb" pattern="#[0-9a-fA-F]{6}" autocomplete="off" aria-label="Colour 1" data-ph="st.c1">
+          <input id="c-c2" placeholder="#rrggbb" pattern="#[0-9a-fA-F]{6}" autocomplete="off" aria-label="Colour 2" data-ph="st.c2">
+          <input id="c-name" maxlength="32" autocomplete="off" aria-label="Display name" data-ph="st.cname" placeholder="Display name (optional)">
+        </div>
+        <div class="row"><button type="button" id="c-prev" data-i="st.preview">Preview (this browser)</button><button type="button" class="ghost" id="c-clear" data-i="st.clear">Clear preview</button></div>
+        <div class="row"><button type="button" id="c-pub" data-i="st.publish">Publish for everyone</button><button type="button" class="danger" id="c-revert" data-i="st.revert">Revert to default</button></div>
+        <p class="out" id="c-out"></p>
+        <div class="tbl"><table><tbody id="ovr"></tbody></table></div>
+      </section>
+
+      <section>
+        <h2 data-i="st.fans">Fans in a video</h2>
+        <p class="mute" data-i="st.fansh">A star out of the shot: «Hide stars» above. A real fan: remove him or take his photo down on the Admin tab.</p>
+        <div class="row"><button type="button" class="ghost" data-goto="sec-remove" data-i="remove">Remove a fan</button><button type="button" class="ghost" data-goto="sec-takedown" data-i="takedown">Take down a photo</button></div>
+      </section>
+    </div>
+  </div>
 </main>
 
 <dialog id="confirm">
@@ -178,7 +257,7 @@
     <div class="row" style="margin-top:10px"><button class="ghost" value="no" data-i="cancel">Cancel</button><button class="danger" value="yes" id="cyes" disabled data-i="remove.btn">Remove</button></div>
   </form>
 </dialog>
-<script type="module" src="js/admin.js?v=38zzs"></script>
-<script type="module" src="js/admin-fan.js?v=38zzs"></script>
+<script type="module" src="js/admin.js?v=38zzt"></script>
+<script type="module" src="js/admin-fan.js?v=38zzt"></script>
 </body>
 </html>
