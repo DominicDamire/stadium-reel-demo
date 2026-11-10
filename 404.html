@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stadium</title>
+<meta name="robots" content="noindex">
+<script>
+// GitHub Pages serves this file for any unknown path. /…/fan/@handle (a shareable profile link) -> the site with #/fan/handle (fan.js routes); anything else -> the site.
+(function () {
+  var p = location.pathname, m = p.match(/^(.*?\/)fan\/@?([A-Za-z0-9._]{1,30})\/?$/);
+  var base = m ? m[1] : '/' + (p.split('/')[1] || '') + '/';   // project page: /<repo>/
+  location.replace(base + location.search + (m ? '#/fan/' + m[2].toLowerCase() : ''));
+})();
+</script></head>
+<body style="background:#0a0a0a;color:#F4F5F7;font:16px system-ui;display:grid;place-items:center;min-height:100vh"><a href="./" style="color:#F4F5F7">Stadium →</a></body></html>

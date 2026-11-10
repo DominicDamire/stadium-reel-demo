@@ -19,6 +19,7 @@ This repo holds only the built, minified static demo. The source lives in a priv
 - Rewards ladder with ranks, club crests, kits and shirt crests
 - Celebrities (lounge) and footballer legends (ring) with photos
 - Space scene by default (Earth), or the city scene
+- Fan pages: public profile (`/fan/@handle`, points history, badges, follow), fantasy «My XI» on a pitch (captain, bench, deadline), leaderboards (all fans / my club / friends)
 - Russian, English and other UI languages (`?lang=`)
 - First-paint loader (pure CSS/SVG, about 8 KB inline): real byte-based progress, fades into the first rendered frame, honours `prefers-reduced-motion`
 
