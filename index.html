@@ -9,10 +9,10 @@
 <title>Intergalactic Stadium</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" crossorigin>
-<link rel="preload" as="script" crossorigin href="js/main.js?v=38zzp">
-<link rel="preload" as="script" crossorigin href="js/c-RIJ52ZPL.js">
-<link rel="preload" as="script" crossorigin href="js/c-PDS252F3.js">
-<link rel="preload" as="script" crossorigin href="js/c-M45OJYM6.js">
+<link rel="preload" as="script" crossorigin href="js/main.js?v=38zzq">
+<link rel="preload" as="script" crossorigin href="js/c-3R24HEGA.js">
+<link rel="preload" as="script" crossorigin href="js/c-UIPUCROS.js">
+<link rel="preload" as="script" crossorigin href="js/c-UVON7M2P.js">
 <style>
   html,body{margin:0;height:100%;background:#000;overflow:hidden}
   canvas{display:block;width:100%;height:100%;touch-action:none}
@@ -24,8 +24,8 @@
   #panel small{display:block;margin-top:8px;opacity:.6}
   #panel{z-index:11}
 </style>
-<link rel="stylesheet" href="hud.css?v=38zzp" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="join.css?v=38zzp" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="hud.css?v=38zzq" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="join.css?v=38zzq" media="print" onload="this.media='all'">
 </head>
 <body>
 <!--LOADER-->
@@ -96,7 +96,7 @@ let tot=0,tg=.03,cu=0,done=0,ff=0;
 try{new PerformanceObserver(l=>{for(const e of l.getEntries())tot+=e.encodedBodySize||e.transferSize||2e4;tg=Math.max(tg,Math.min(.96,.03+.93*tot/X))}).observe({type:'resource',buffered:true})}catch(e){}
 const t0=performance.now(),set=p=>{b.style.setProperty('--p',p);$('bn').textContent=Math.round(p*100);br.style.strokeDashoffset=100-p*100;bs.style.strokeDasharray=p*100+' 100';const q=br.getPointAtLength(p*len);bh.setAttribute('cx',q.x);bh.setAttribute('cy',q.y)};
 const tick=()=>{if(!b.isConnected)return;const r=window.__stadium&&window.__stadium.renderer;
-if(!done&&r&&r.info.render.frame>1){ff=ff||performance.now();const sc=window.__stadium.scene,E=sc&&sc.getObjectByName('earth');if(performance.now()-ff>15e3||!E||E.visible){done=1;tg=1;window.__firstFrame=ff}}
+if(!done&&r&&r.info.render.frame>1){ff=ff||performance.now();const sc=window.__stadium.scene,E=sc&&sc.getObjectByName('earth');const cf=window.__stadium.crowdF;if(performance.now()-ff>15e3||(cf!=null&&r.info.render.frame>cf+1&&(!E||E.visible))){done=1;tg=1;window.__firstFrame=ff}}
 cu=rm?tg:cu+(tg-cu)*(done?.25:.07);set(cu);
 if(done&&cu>.995){set(1);setTimeout(()=>{b.classList.add('d');setTimeout(()=>b.remove(),950)},180);return}
 if(!done&&performance.now()-t0>45e3){$('bm2').textContent=d[3]||T.en[3];b.classList.add('x')}
@@ -121,7 +121,7 @@ window.__boot={err:m=>{$('bm2').textContent=m;b.classList.add('x')}};set(0);tick
   m.textContent = JSON.stringify({ imports: { three: base + 'build/three.module.js', 'three/addons/': base + 'examples/jsm/' } });
   document.head.append(m);
   for (const s of ['main', 'join', 'sound', 'tiermap', 'editor']) {
-    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=38zzp'; document.body.append(e);
+    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=38zzq'; document.body.append(e);
   }
 })();
 </script>
