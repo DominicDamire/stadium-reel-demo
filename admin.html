@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<title>Stadium admin</title>
+<!-- Admin web page (docs/admin-commands.md «Admin web page»). Not linked from anywhere. Every button = one admin command; the logic is admin.js -->
+<style>
+  :root{--bg:#0b0e14;--card:#141925;--line:#ffffff1c;--ink:#eef1f6;--mute:#9aa3b2;--acc:#3d8bff;--bad:#ff6b6b;--ok:#4cd28a;--r:12px}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  body{padding:0 16px calc(32px + env(safe-area-inset-bottom))}
+  header{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:8px;padding:12px 0;background:var(--bg);border-bottom:1px solid var(--line)}
+  header h1{flex:1;margin:0;font-size:17px}
+  main{max-width:760px;margin:0 auto}
+  .grid{display:grid;gap:12px;margin-top:12px}
+  .grid>*{min-width:0}
+  @media (min-width:900px){main{max-width:1100px}.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+  section{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+  h2{margin:0 0 10px;font-size:15px}
+  form,.row{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+  input,select,textarea,button{font:inherit;color:inherit;border-radius:10px;border:1px solid var(--line);background:#0e121b;min-height:44px;padding:8px 10px}
+  input,select{flex:1 1 140px;min-width:0}
+  textarea{width:100%;resize:vertical}
+  button{background:var(--acc);border-color:transparent;color:#fff;font-weight:600;padding:8px 14px;cursor:pointer}
+  button.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+  button.danger{background:#b3261e}
+  button:disabled{opacity:.5}
+  label{font-size:13px;color:var(--mute);display:block;margin:0 0 4px}
+  .out{font-size:14px;margin:4px 0 0;white-space:pre-wrap;word-break:break-word}
+  .out.err{color:var(--bad)} .out.ok{color:var(--ok)}
+  .mute{color:var(--mute);font-size:13px}
+  .tbl{max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:10px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{padding:8px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+  th{position:sticky;top:0;background:var(--card)}
+  #signin{max-width:420px;margin:24px auto}
+  #signin input{flex:1 1 100%}
+  #signin button{flex:1 1 100%}
+  dialog{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:var(--r);width:min(92vw,420px)}
+  dialog::backdrop{background:#000a}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header><h1 data-i="title">Stadium admin</h1><button class="ghost" id="lang" type="button" aria-label="Language">RU</button><button class="ghost" id="out" type="button" data-i="signout" hidden>Sign out</button></header>
+<main>
+  <section id="signin" hidden>
+    <h2 data-i="signin">Sign in</h2>
+    <form data-f="login">
+      <label for="u" data-i="user">Instagram username</label><input id="u" name="user" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+      <label for="p" data-i="pass">Password</label><input id="p" name="password" type="password" autocomplete="current-password" required minlength="12">
+      <button data-i="signin">Sign in</button>
+    </form>
+    <p class="out" data-o="login"></p>
+    <p class="mute" data-i="first">First time? Open your one-time login link (an admin makes it with add-fan) or paste it here, then set your password.</p>
+    <form data-f="claim"><input name="t" placeholder="https://…?t=…" autocomplete="off" required><button class="ghost" data-i="uselink">Use link</button></form>
+    <p class="out" data-o="claim"></p>
+  </section>
+
+  <div id="dash" hidden>
+    <div class="grid">
+      <section class="wide" id="me">
+        <h2 data-i="me">Me</h2>
+        <p class="out" data-o="whoami"></p>
+        <form data-f="password" autocomplete="on">
+          <input name="username" autocomplete="username" hidden>
+          <input name="old" type="password" autocomplete="current-password" data-ph="oldpw" placeholder="Current password">
+          <input name="new" type="password" autocomplete="new-password" minlength="12" required data-ph="newpw" placeholder="New password (12+ characters)">
+          <input name="again" type="password" autocomplete="new-password" minlength="12" required data-ph="againpw" placeholder="New password again">
+          <button data-i="setpw">Set password</button>
+        </form>
+        <p class="out" data-o="password"></p>
+      </section>
+
+      <section>
+        <h2 data-i="addfan">Add a fan</h2>
+        <form data-f="add"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><select name="club" data-clubs></select><button data-i="add">Add</button></form>
+        <div data-o="add"></div>
+      </section>
+
+      <section>
+        <h2 data-i="derby">New derby</h2>
+        <form data-f="battle"><select name="home" data-clubs></select><select name="away" data-clubs="1"></select>
+          <input name="media" data-ph="media" placeholder="Reel media id (optional)" autocomplete="off"><input name="ends" type="datetime-local" required aria-label="Kick-off"><button data-i="create">Create</button></form>
+        <p class="out" data-o="battle"></p>
+      </section>
+
+      <section class="wide">
+        <h2><span data-i="fans">Fans</span> <span class="mute" data-o="count"></span></h2>
+        <div class="row"><input type="search" id="q" data-ph="search" placeholder="Search @username or club" autocomplete="off"><button class="ghost" type="button" id="reload" data-i="reload">Reload</button></div>
+        <div class="tbl"><table><thead><tr><th>#</th><th data-i="th.user">User</th><th data-i="th.club">Club</th><th data-i="th.seat">Seat</th><th data-i="th.level">Level</th><th data-i="th.photo">Photo</th></tr></thead><tbody id="fans"></tbody></table></div>
+      </section>
+
+      <section>
+        <h2 data-i="remove">Remove a fan</h2>
+        <form data-f="remove"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button class="danger" data-i="remove.btn">Remove…</button></form>
+        <p class="out" data-o="remove"></p>
+      </section>
+
+      <section>
+        <h2 data-i="seat">Move seat</h2>
+        <form data-f="seat"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><input name="seat" type="number" min="0" max="199999" inputmode="numeric" data-ph="seatno" placeholder="Seat" required>
+          <select name="level" aria-label="Level"></select><button data-i="move">Move</button></form>
+        <p class="out" data-o="seat"></p>
+      </section>
+
+      <section>
+        <h2 data-i="takedown">Take down a photo</h2>
+        <form data-f="takedown"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button class="danger" data-i="takedown.btn">Take down</button></form>
+        <p class="out" data-o="takedown"></p>
+      </section>
+
+      <section>
+        <h2 data-i="skip">Roles: top-10 check</h2>
+        <form data-f="skip"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button name="skip" value="1" data-i="skip.btn">No role this month</button><button class="ghost" name="skip" value="0" data-i="unskip.btn">Undo</button></form>
+        <p class="out" data-o="skip"></p>
+      </section>
+
+      <section>
+        <h2 data-i="admins">Admins</h2>
+        <form data-f="grant"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button data-i="grant">Add admin</button></form>
+        <p class="out" data-o="admins"></p>
+        <div class="tbl"><table><tbody id="admins"></tbody></table></div>
+      </section>
+
+      <section>
+        <h2 data-i="club">Club: «Мой состав»</h2>
+        <div class="row"><select id="club" data-clubs aria-label="Club"></select></div>
+        <p class="out" data-o="clubnow"></p>
+        <form data-f="formation"><input name="formation" placeholder="4-3-3" pattern="\d(-\d){2,3}" required autocomplete="off"><button data-i="setform">Set formation</button></form>
+        <form data-f="lock"><input name="lock" type="datetime-local" required aria-label="Lock"><button data-i="setlock">Set lock</button><button class="ghost" type="button" id="nolock" data-i="nolock">None</button></form>
+        <p class="out" data-o="club"></p>
+      </section>
+
+      <section class="wide">
+        <h2 data-i="roles">Roles in this club</h2>
+        <div class="row"><select id="rclub" data-clubs aria-label="Club"></select><button class="ghost" type="button" id="rload" data-i="reload">Reload</button></div>
+        <div class="tbl"><table><tbody id="roles"></tbody></table></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<dialog id="confirm">
+  <form method="dialog">
+    <p data-o="ctext"></p>
+    <input name="typed" autocomplete="off" autocapitalize="none" spellcheck="false" style="width:100%">
+    <div class="row" style="margin-top:10px"><button class="ghost" value="no" data-i="cancel">Cancel</button><button class="danger" value="yes" id="cyes" disabled data-i="remove.btn">Remove</button></div>
+  </form>
+</dialog>
+<script type="module" src="js/admin.js?v=38zzo"></script>
+</body>
+</html>
