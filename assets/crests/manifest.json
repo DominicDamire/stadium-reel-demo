@@ -28,87 +28,6 @@
    "bytes": 57304
   },
   {
-   "club": "Локомотив",
-   "slug": "lokomotiv",
-   "file": "assets/crests/lokomotiv.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/9/93/FC_Lokomotiv_Moscow_logo.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Lokomotiv_Moscow_logo.svg",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 35707
-  },
-  {
-   "club": "Динамо",
-   "slug": "dynamo",
-   "file": "assets/crests/dynamo.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/e/e7/Dynamo_Moscow_logo.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:Dynamo_Moscow_logo.svg",
-   "license_note": "PD",
-   "bytes": 15934
-  },
-  {
-   "club": "Краснодар",
-   "slug": "krasnodar",
-   "file": "assets/crests/krasnodar.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/3/30/FC_Krasnodar_logo.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Krasnodar_logo.svg",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 53930
-  },
-  {
-   "club": "Ростов",
-   "slug": "rostov",
-   "file": "assets/crests/rostov.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/a/a2/FC_Rostov_logo.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Rostov_logo.svg",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 45273
-  },
-  {
-   "club": "Рубин",
-   "slug": "rubin",
-   "file": "assets/crests/rubin.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/3/32/FC_Rubin_Kazan_logo.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Rubin_Kazan_logo.svg",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 31038
-  },
-  {
-   "club": "Ахмат",
-   "slug": "akhmat",
-   "file": "assets/crests/akhmat.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/3/36/Akhmat_Grozny_logo.png",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:Akhmat_Grozny_logo.png",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 64549
-  },
-  {
-   "club": "Крылья Советов",
-   "slug": "krylia-sovetov",
-   "file": "assets/crests/krylia-sovetov.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/9/92/PFC_Krylia_Sovetov_Samara.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:PFC_Krylia_Sovetov_Samara.svg",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 15093
-  },
-  {
-   "club": "Урал",
-   "slug": "ural",
-   "file": "assets/crests/ural.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/8/8f/FC_Ural_Yekaterinburg_logo.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Ural_Yekaterinburg_logo.svg",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 40195
-  },
-  {
-   "club": "Факел",
-   "slug": "fakel",
-   "file": "assets/crests/fakel.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/a/ad/FC_Fakel_Voronezh_logo.png",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Fakel_Voronezh_logo.png",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 44766
-  },
-  {
    "club": "Манчестер Юнайтед",
    "slug": "man-united",
    "file": "assets/crests/man-united.webp",
@@ -334,15 +253,6 @@
    "bytes": 50213
   },
   {
-   "club": "Шаньдун Тайшань",
-   "slug": "shandong",
-   "file": "assets/crests/shandong.webp",
-   "source_url": "https://upload.wikimedia.org/wikipedia/en/8/88/Shandong_Taishan_Football_Club.svg",
-   "wiki_file_page": "https://en.wikipedia.org/wiki/File:Shandong_Taishan_Football_Club.svg",
-   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
-   "bytes": 28518
-  },
-  {
    "club": "Пекин Гоань",
    "slug": "beijing-guoan",
    "file": "assets/crests/beijing-guoan.webp",
@@ -352,7 +262,7 @@
    "bytes": 54753
   },
   {
-   "club": "Рейнджерс",
+   "club": "Rangers",
    "slug": "rangers",
    "file": "assets/crests/rangers.webp",
    "source_url": "https://upload.wikimedia.org/wikipedia/en/4/43/Rangers_FC.svg",
@@ -449,6 +359,109 @@
    "wiki_file_page": "https://commons.wikimedia.org/wiki/File:FC_Internazionale_Milano_2021.svg",
    "license_note": "Public domain",
    "bytes": 26511
+  }
+ ],
+ "retired_note": "Clubs dropped from config.js CLUBS for the English-first launch (2026-11-10): the files stay in assets/crests, nothing loads them (main.js / reel-fx.js / shirt.js read crests only).",
+ "retired": [
+  {
+   "club": "Локомотив",
+   "slug": "lokomotiv",
+   "file": "assets/crests/lokomotiv.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/9/93/FC_Lokomotiv_Moscow_logo.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Lokomotiv_Moscow_logo.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 35707
+  },
+  {
+   "club": "Динамо",
+   "slug": "dynamo",
+   "file": "assets/crests/dynamo.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/e/e7/Dynamo_Moscow_logo.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:Dynamo_Moscow_logo.svg",
+   "license_note": "PD",
+   "bytes": 15934
+  },
+  {
+   "club": "Краснодар",
+   "slug": "krasnodar",
+   "file": "assets/crests/krasnodar.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/3/30/FC_Krasnodar_logo.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Krasnodar_logo.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 53930
+  },
+  {
+   "club": "Ростов",
+   "slug": "rostov",
+   "file": "assets/crests/rostov.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/a/a2/FC_Rostov_logo.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Rostov_logo.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 45273
+  },
+  {
+   "club": "Рубин",
+   "slug": "rubin",
+   "file": "assets/crests/rubin.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/3/32/FC_Rubin_Kazan_logo.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Rubin_Kazan_logo.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 31038
+  },
+  {
+   "club": "Ахмат",
+   "slug": "akhmat",
+   "file": "assets/crests/akhmat.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/3/36/Akhmat_Grozny_logo.png",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:Akhmat_Grozny_logo.png",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 64549
+  },
+  {
+   "club": "Крылья Советов",
+   "slug": "krylia-sovetov",
+   "file": "assets/crests/krylia-sovetov.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/9/92/PFC_Krylia_Sovetov_Samara.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:PFC_Krylia_Sovetov_Samara.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 15093
+  },
+  {
+   "club": "Урал",
+   "slug": "ural",
+   "file": "assets/crests/ural.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/8/8f/FC_Ural_Yekaterinburg_logo.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Ural_Yekaterinburg_logo.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 40195
+  },
+  {
+   "club": "Факел",
+   "slug": "fakel",
+   "file": "assets/crests/fakel.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/a/ad/FC_Fakel_Voronezh_logo.png",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:FC_Fakel_Voronezh_logo.png",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 44766
+  },
+  {
+   "club": "Шаньдун Тайшань",
+   "slug": "shandong",
+   "file": "assets/crests/shandong.webp",
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/8/88/Shandong_Taishan_Football_Club.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:Shandong_Taishan_Football_Club.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 28518
+  },
+  {
+   "club": "Гуанчжоу",
+   "slug": "guangzhou",
+   "file": null,
+   "source_url": "https://upload.wikimedia.org/wikipedia/en/9/98/Guangzhou_Evergrande_Taobao_logo.svg",
+   "wiki_file_page": "https://en.wikipedia.org/wiki/File:Guangzhou_Evergrande_Taobao_logo.svg",
+   "license_note": "Fair use (non-free logo, en.wikipedia fair-use file)",
+   "bytes": 58167,
+   "note": "club dissolved 2025-01-06; crest file deleted on 2026-11-10 (Rangers took the slot)"
   }
  ],
  "missing": []

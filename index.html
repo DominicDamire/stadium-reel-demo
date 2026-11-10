@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="icon" href="data:,">
 <link rel="preload" as="image" href="assets/tex/earth/earth-day.jpg" crossorigin fetchpriority="high">   <!-- fix62: Earth is in the opening shot; fetch its maps FIRST (crossorigin = three's TextureLoader img, so the preload is reused) -->
 <link rel="preload" as="image" href="assets/tex/earth/earth-clouds.jpg" crossorigin fetchpriority="high">
-<title>Межгалактический стадион</title>
+<title>Intergalactic Stadium</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" crossorigin>
-<link rel="preload" as="script" crossorigin href="js/main.js?v=38zzh">
-<link rel="preload" as="script" crossorigin href="js/c-RKZQUVHO.js">
-<link rel="preload" as="script" crossorigin href="js/c-KWT4YVRB.js">
-<link rel="preload" as="script" crossorigin href="js/c-EULKBLBR.js">
+<link rel="preload" as="script" crossorigin href="js/main.js?v=38zzi">
+<link rel="preload" as="script" crossorigin href="js/c-AUTEJ4I3.js">
+<link rel="preload" as="script" crossorigin href="js/c-YUIK2BL6.js">
+<link rel="preload" as="script" crossorigin href="js/c-ICHTDTCM.js">
 <style>
   html,body{margin:0;height:100%;background:#000;overflow:hidden}
   canvas{display:block;width:100%;height:100%;touch-action:none}
@@ -24,7 +24,7 @@
   #panel small{display:block;margin-top:8px;opacity:.6}
   #panel{z-index:11}
 </style>
-<link rel="stylesheet" href="hud.css?v=38zzh" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="hud.css?v=38zzi" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="join.css" media="print" onload="this.media='all'">
 </head>
 <body>
@@ -80,12 +80,12 @@
 </div>
 <script>
 (()=>{const b=document.getElementById('boot'),$=i=>document.getElementById(i),
-T={ru:['МЕЖГАЛАКТИЧЕСКИЙ СТАДИОН','название выберут фанаты','загрузка','Долго… подождите или повторите.'],
-en:['INTERGALACTIC STADIUM','name chosen by fans — soon','loading','Taking long… wait or retry.'],
-es:['ESTADIO INTERGALÁCTICO','el nombre lo elegirán los aficionados — pronto','cargando'],
-pt:['ESTÁDIO INTERGALÁCTICO','o nome será escolhido pelos torcedores — em breve','carregando'],
-zh:['星际体育场','名字将由球迷选择 — 敬请期待','加载中']};
-let L='ru';try{const q=new URLSearchParams(location.search).get('lang');L=T[q]?q:T[localStorage.getItem('lang')]?localStorage.getItem('lang'):'ru'}catch(e){}
+T={en:['INTERGALACTIC STADIUM','name chosen by fans — soon','loading','Taking long… wait or retry.'],
+ru:['МЕЖГАЛАКТИЧЕСКИЙ СТАДИОН','название выберут фанаты','загрузка','Долго… подождите или повторите.'],
+es:['ESTADIO INTERGALÁCTICO','el nombre lo elegirán los aficionados — pronto','cargando','Tarda mucho… espera o reintenta.'],
+pt:['ESTÁDIO INTERGALÁCTICO','o nome será escolhido pelos torcedores — em breve','carregando','Está demorando… espere ou tente de novo.'],
+zh:['星际体育场','名字将由球迷选择 — 敬请期待','加载中','加载较慢…请稍候或重试。']};
+let L='en';try{const q=new URLSearchParams(location.search).get('lang'),s=localStorage.getItem('lang'),nl=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language]).map(x=>String(x||'').slice(0,2).toLowerCase()).find(x=>T[x]);L=T[q]?q:T[s]?s:nl||'en'}catch(e){}   // same order as i18n.js: ?lang= -> stored -> browser languages -> en
 const d=T[L],w=L=='zh'?[d[0]]:d[0].split(' ');let n=0;
 $('bt').innerHTML=w.map(s=>'<b>'+[...s].map(c=>'<span style="--i:'+n+++'">'+c+'</span>').join('')+'</b>').join('');
 $('bp').textContent=d[1];$('bl').textContent=d[2];
@@ -116,12 +116,12 @@ window.__boot={err:m=>{$('bm2').textContent=m;b.classList.add('x')}};set(0);tick
     for (const c of CDN) { try { await import(c + 'build/three.module.js'); base = c; break; } catch (e) { /* next CDN */ } }
     if (!base) await new Promise(r => setTimeout(r, 1200 * (tries + 1)));
   }
-  if (!base) { __boot.err('Нет сети. Проверьте интернет и повторите.'); return; }
+  if (!base) { __boot.err('No connection. Check your internet and retry. / Нет сети. Проверьте интернет и повторите.'); return; }
   const m = document.createElement('script'); m.type = 'importmap';
   m.textContent = JSON.stringify({ imports: { three: base + 'build/three.module.js', 'three/addons/': base + 'examples/jsm/' } });
   document.head.append(m);
   for (const s of ['main', 'join', 'sound', 'tiermap', 'editor']) {
-    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=38zzh'; document.body.append(e);
+    const e = document.createElement('script'); e.type = 'module'; e.async = false; e.src = 'js/' + s + '.js?v=38zzi'; document.body.append(e);
   }
 })();
 </script>
