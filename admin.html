@@ -43,6 +43,17 @@
   dialog{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:var(--r);width:min(92vw,420px)}
   dialog::backdrop{background:#000a}
   [hidden]{display:none!important}
+  /* fan votes (admin-fan.js) */
+  .dq,.bn{border-top:1px solid var(--line);padding:10px 0}
+  .dq p,.bn p{margin:0 0 6px}
+  .dq-q,.bn-t{font-weight:600;font-size:16px;word-break:break-word}
+  .dq-o{position:relative;display:flex;justify-content:space-between;gap:8px;padding:8px 10px;margin:0 0 6px;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+  .dq-o i{position:absolute;inset:0 auto 0 0;background:#3d8bff33}
+  .dq-o span,.dq-o b{position:relative;min-width:0;overflow-wrap:anywhere}
+  .dq-o b{white-space:nowrap;font-weight:500;color:var(--mute)}
+  .dq-o.win{border-color:var(--ok)}
+  .bn[data-st=approved] .bn-t{color:var(--ok)}
+  .bn[data-st=rejected] .bn-t,.bn[data-st=down] .bn-t{color:var(--mute);text-decoration:line-through}
 </style>
 </head>
 <body>
@@ -141,6 +152,21 @@
         <div class="row"><select id="rclub" data-clubs aria-label="Club"></select><button class="ghost" type="button" id="rload" data-i="reload">Reload</button></div>
         <div class="tbl"><table><tbody id="roles"></tbody></table></div>
       </section>
+
+      <!-- fan votes (admin-fan.js): daily A/B/C vote + banner queue -->
+      <section class="wide" id="daily">
+        <h2 id="h-daily">Daily vote: what do we build tomorrow?</h2>
+        <form data-f="daily"><input name="q" maxlength="140" required autocomplete="off" style="flex-basis:100%"><input name="a" maxlength="60" required autocomplete="off"><input name="b" maxlength="60" required autocomplete="off"><input name="c" maxlength="60" required autocomplete="off">
+          <input name="day" type="date"><button>Save question</button><button class="ghost" type="button" id="dreload">Reload</button></form>
+        <p class="out" data-o="daily"></p>
+        <div id="dq"></div>
+      </section>
+      <section class="wide" id="banners">
+        <h2 id="h-banners">Banner queue</h2>
+        <div class="row"><select id="bst" aria-label="Status"></select><button class="ghost" type="button" id="breload">Reload</button><button class="ghost" type="button" id="blikes">Refresh likes</button></div>
+        <p class="out" data-o="banners"></p>
+        <div id="bq"></div>
+      </section>
     </div>
   </div>
 </main>
@@ -152,6 +178,7 @@
     <div class="row" style="margin-top:10px"><button class="ghost" value="no" data-i="cancel">Cancel</button><button class="danger" value="yes" id="cyes" disabled data-i="remove.btn">Remove</button></div>
   </form>
 </dialog>
-<script type="module" src="js/admin.js?v=38zzp"></script>
+<script type="module" src="js/admin.js?v=38zzr"></script>
+<script type="module" src="js/admin-fan.js?v=38zzr"></script>
 </body>
 </html>
