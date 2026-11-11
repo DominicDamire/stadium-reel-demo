@@ -588,3 +588,5 @@ html.fp-on .dv-pill,.hud.jn-on~.dv-pill{display:none}
 .fp-mine::before{content:attr(data-you); display:block; font:700 11px var(--body); letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin:10px 0 4px}
 .hb-fx b span{display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .hb-fxs .hb-rd{display:block; margin:12px 0 0; color:var(--muted)}
+
+.hb-vk{position:absolute; z-index:5; right:5px; top:34px; width:22px; height:22px; display:grid; place-items:center; background:#000c; border-radius:50%}.hb-vk img,.hb-vk svg{width:16px; height:16px; object-fit:contain}
