@@ -442,3 +442,54 @@ html.fp-on .dv-pill,.hud.jn-on~.dv-pill{display:none}
 .dv-o:disabled{cursor:default}
 .dv-o:disabled:not([aria-pressed=true]){opacity:.75}
 @media (min-width:768px){ .dv{left:auto; right:16px; bottom:16px; width:420px; border:3px solid #000} }
+
+/* the cup (cup-page.js) */
+.cp-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.cp-grid.one{grid-template-columns:1fr}
+.cp-tie{display:grid; gap:4px; padding:8px; background:#141414; border:2px solid #333; min-width:0}
+.cp-tie.live{border-color:var(--red); box-shadow:3px 3px 0 var(--red)}
+.cp-tie small{font:600 11px var(--body); color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.cp-row{display:grid; grid-template-columns:20px minmax(0,1fr) auto; align-items:center; gap:6px; min-height:24px}
+.cp-row b{font:600 13px var(--body); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.cp-row em{font:700 14px var(--disp); font-style:normal}
+.cp-row .fp-crest,.cp-row .fp-emb,.cp-tbd{width:20px; height:20px; object-fit:contain; display:block}
+.cp-tbd{border:2px dashed #555; border-radius:50%}
+.cp-row.won b,.cp-row.won em{color:var(--gold)}
+.cp-row.out{opacity:.5}
+.cp-live{padding:12px; background:#141414; border:2px solid var(--red); box-shadow:4px 4px 0 var(--red); display:grid; gap:8px; margin-bottom:12px}
+.cp-lab{display:flex; justify-content:space-between; font:700 13px var(--disp); text-transform:uppercase; color:var(--gold)}
+.cp-vs{display:grid; grid-template-columns:32px minmax(0,1fr) auto minmax(0,1fr) 32px; align-items:center; gap:6px; text-align:center}
+.cp-vs b{font-size:17px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.cp-vs i{font-style:normal; color:var(--muted)}
+.cp-vs .fp-crest,.cp-vs .fp-emb{width:32px; height:32px; object-fit:contain; display:block}
+.cp-sup{height:10px; background:#F4F5F7; border:2px solid #000}
+.cp-sup i{display:block; height:100%; background:var(--red)}
+.cp-num{display:flex; justify-content:space-between; font:600 12px var(--body); color:var(--muted)}
+.cp-cheer{width:100%; min-height:56px; font-size:22px}
+.cp-note{font:500 12px var(--body); color:var(--muted); text-align:center}
+.cp-next{margin-bottom:12px; color:#000}
+.cp-next .cp-in{text-align:right; flex:none}
+.cp-next span:first-child{min-width:0}
+.cp-out{margin:0 0 12px; padding:10px 12px; border:2px solid var(--gold); color:var(--gold); font:700 15px var(--disp); text-transform:uppercase; text-align:center}
+.cp-champ{display:flex; align-items:center; gap:12px; padding:12px; margin-bottom:12px; background:var(--gold); color:#000; border:2px solid #000}
+.cp-champ .fp-crest,.cp-champ .fp-emb{width:44px; height:44px; object-fit:contain; display:block}
+.cp-champ p{display:grid}.cp-champ small{font:600 12px var(--body)}.cp-champ b{font-size:22px}
+.cp-prog{width:100%; max-width:280px}
+.cp-back{display:inline-block; font:700 13px var(--disp); text-transform:uppercase; min-height:32px; color:var(--muted)}
+.cp-head{padding:12px; background:#141414; border:2px solid #333; text-align:center; display:grid; gap:8px}
+.cp-head small{font:600 12px var(--body); color:var(--muted)}
+.cp-board{display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; gap:8px}
+.cp-board span{display:grid; justify-items:center; gap:4px; min-width:0}
+.cp-board b{font-size:15px; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.cp-board strong{font:700 40px var(--disp)}
+.cp-board .fp-crest,.cp-board .fp-emb{width:48px; height:48px; object-fit:contain; display:block}
+.cp-replay{width:100%; margin:12px 0 6px}
+.cp-goals li{display:grid; grid-template-columns:36px minmax(0,1fr) auto; gap:8px; align-items:center; padding:8px 0; border-bottom:1px solid #222}
+.cp-goals em{font:700 15px var(--disp); font-style:normal; color:var(--gold)}
+.cp-goals span{display:grid; min-width:0}.cp-goals small{color:var(--muted); font-size:12px}
+.cp-goals i{font-style:normal; font-size:12px; color:var(--muted)}
+.cp-xis{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.cp-xis h4{font:700 13px var(--disp); text-transform:uppercase; margin-bottom:6px}
+.cp-xis li{display:grid; grid-template-columns:20px minmax(0,1fr) auto; gap:4px; font-size:12px; padding:3px 0; border-bottom:1px solid #222}
+.cp-xis em{font-style:normal; color:var(--muted)}.cp-xis span{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.fp-tabs:has(>:nth-child(5))>*{font-size:12px; letter-spacing:0; padding:0 2px}   /* five tabs with the cup: «Профиль» and «Состав» must not touch */

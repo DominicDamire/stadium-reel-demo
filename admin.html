@@ -191,6 +191,14 @@
         <p class="out" data-o="club"></p>
       </section>
 
+      <section class="wide" id="sec-cup">
+        <h2><span id="h-cup">Cup</span> <button class="ghost" type="button" id="cupreload">Reload</button></h2>
+        <p id="cupnow"></p>
+        <form data-f="cupstart"><label class="mute" id="cupfirst" for="cupfirst-i"></label><div class="row"><input id="cupfirst-i" name="first" type="datetime-local"><button id="cupgo">Start a cup</button><button class="danger" type="button" id="cupstop">Cancel the cup</button></div></form>
+        <p class="out" data-o="cup"></p>
+        <div class="tbl" style="max-height:320px"><table id="cupsched"></table></div>
+      </section>
+
       <section class="wide">
         <h2 data-i="roles">Roles in this club</h2>
         <div class="row"><select id="rclub" data-clubs aria-label="Club"></select><button class="ghost" type="button" id="rload" data-i="reload">Reload</button></div>
@@ -288,7 +296,8 @@
     <div class="row" style="margin-top:10px"><button class="ghost" value="no" data-i="cancel">Cancel</button><button class="danger" value="yes" id="cyes" disabled data-i="remove.btn">Remove</button></div>
   </form>
 </dialog>
-<script type="module" src="js/admin.js?v=39g"></script>
-<script type="module" src="js/admin-fan.js?v=39g"></script>
+<script type="module" src="js/admin.js?v=39h"></script>
+<script type="module" src="js/admin-fan.js?v=39h"></script>
+<script type="module" src="js/admin-cup.js?v=39h"></script>
 </body>
 </html>
