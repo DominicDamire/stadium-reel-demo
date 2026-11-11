@@ -542,3 +542,49 @@ html.fp-on .dv-pill,.hud.jn-on~.dv-pill{display:none}
 .hb-big{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:2px 10px; align-items:center; padding:14px; background:#141414; border:2px solid #F4F5F7; box-shadow:4px 4px 0 var(--jc); min-height:64px}
 .hb-big b{font-size:20px}.hb-big small{grid-column:1; color:var(--muted); font-size:13px}.hb-big i{grid-row:1 / span 2; grid-column:2; font-style:normal; font-size:22px}
 .tk-ov .tk-acts{flex-wrap:wrap}.tk-ov .tk-acts .fp-btn{flex:1 1 40%; min-width:0}
+
+/* UI pass 2 (2026-11-11): votes on Ticket cards, clearer hub screens. Refs: Turf (poll % under each choice, «your position» row, ticket match card), Duolingo profile (stat tiles). */
+.hb-vote{margin-bottom:8px}
+.hb-cards{display:flex; gap:10px; overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x proximity; margin:0 -16px; padding:4px 16px 10px; scrollbar-width:none; font-size:8.6px}.hb-cards::-webkit-scrollbar{display:none}
+.hb-vc{position:relative; flex:none; display:grid; gap:6px; width:10.8em; padding:.4em .4em 6px; scroll-snap-align:start; background:#141414!important; border:2px solid #333!important; text-align:left; -webkit-tap-highlight-color:transparent}
+.hb-vc .tk{margin:0 auto}
+.hb-vc.on{border-color:var(--gold)!important; background:#221c0c!important; box-shadow:3px 3px 0 var(--gold)}
+.hb-vc.mine:not(.on){border-color:#F4F5F7!important}
+.hb-vc:disabled{cursor:default; opacity:1}
+.hb-vc:focus-visible{outline:2px solid #fff; outline-offset:2px}
+.hb-tick,.hb-mine{position:absolute; z-index:5; right:-2px; top:-2px; font:700 13px/1 var(--disp); font-style:normal; text-transform:uppercase}
+.hb-tick{width:28px; height:28px; display:grid; place-items:center; background:var(--gold); color:#000; border:2px solid #000}
+.hb-mine{padding:4px 6px; background:#F4F5F7; color:#000; border:2px solid #000; font-size:11px}
+.hb-vn{display:grid; place-items:center; height:13.4em; font-size:15px; text-align:center}
+.hb-vs{display:grid; grid-template-columns:repeat(auto-fit,minmax(0,1fr)); gap:2px; padding:0 2px}
+.hb-vs div{display:grid; justify-items:center; min-width:0}
+.hb-vs dd{font:700 18px/1.05 var(--disp)}
+.hb-vs dt{font:700 10px var(--body); letter-spacing:.06em; text-transform:uppercase; color:var(--muted); white-space:nowrap}
+.hb-vbar{position:relative; display:block; height:20px; background:#000; border:1px solid #333}
+.hb-vbar i{position:absolute; inset:0 auto 0 0; background:color-mix(in srgb,var(--jc) 55%,transparent)}
+.hb-vbar b{position:relative; display:block; padding:0 6px; font:700 11px/18px var(--body); white-space:nowrap}
+.hb-go{position:sticky; bottom:-24px; z-index:6; display:flex; align-items:center; justify-content:space-between; gap:10px; margin:6px -16px 0; padding:10px 16px 34px; background:#0a0a0af2; border-top:2px solid #222}
+.hb-go span{display:grid; min-width:0}
+.hb-go small{font:700 11px var(--body); letter-spacing:.1em; text-transform:uppercase; color:var(--gold)}
+.hb-go b{font-size:17px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.hb-go .fp-btn{flex:none; min-width:132px}
+/* flat ticket in a vote card: the tray card's rules */
+.hb-vc .tk .L{translate:none}.hb-vc .tk{perspective:none}.hb-vc .tk-rot{transform-style:flat}.hb-vc .L.player{z-index:1}.hb-vc .L.low{z-index:2}.hb-vc .L.sheen{display:none}.hb-vc .L.name,.hb-vc .L.pos,.hb-vc .L.rate,.hb-vc .L.rib{z-index:3}
+
+/* hub screens: one look for section heads, empty states, panels */
+.fp-none{padding:14px 12px; border:2px dashed #333; color:var(--muted); text-align:center; font-size:14px}
+.fp a.fp-dl{background:#F4F5F7; color:#000}   /* the «next match» link lost its card under .fp a */
+.hb-mgr{margin-top:20px; padding:2px 12px 12px; background:#111; border:2px solid #2a2a2a; border-left:4px solid var(--jc)}
+.hb-mgr>.fp-h:first-child{margin-top:12px}
+.hb-mgr .fp-stats>div{background:#0a0a0a}
+.fp-h{display:flex; align-items:center; gap:8px}.fp-h::after{content:""; flex:1; height:1px; background:#2a2a2a}
+.hb-fxs{gap:8px}
+.hb-fx.mine{border-color:var(--jc); box-shadow:3px 3px 0 var(--jc)}
+.hb-fx span{grid-template-columns:minmax(0,1fr) minmax(64px,auto) minmax(0,1fr)}
+.hb-fx span b{display:flex; align-items:center; gap:6px; min-width:0}.hb-fx span b:last-child{justify-content:flex-end}
+.hb-fx em{justify-self:center; min-width:52px; white-space:nowrap; padding:2px 6px; text-align:center; background:#000; border:1px solid #333}
+.hb-fx.done em{background:#F4F5F7; color:#000; border-color:#000}
+.hb-rd{font:700 13px var(--disp); text-transform:uppercase; letter-spacing:.04em; margin:16px 0 6px}
+.fp-mine::before{content:attr(data-you); display:block; font:700 11px var(--body); letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin:10px 0 4px}
+.hb-fx b span{display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.hb-fxs .hb-rd{display:block; margin:12px 0 0; color:var(--muted)}
