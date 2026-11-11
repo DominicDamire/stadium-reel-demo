@@ -37,9 +37,13 @@
   table{width:100%;border-collapse:collapse;font-size:14px}
   th,td{padding:8px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
   th{position:sticky;top:0;background:var(--card)}
-  #signin{max-width:420px;margin:24px auto}
-  #signin input{flex:1 1 100%}
-  #signin button{flex:1 1 100%}
+  #signin,#choose{max-width:420px;margin:24px auto}
+  #signin input,#choose input{flex:1 1 100%}
+  #signin button,#choose button{flex:1 1 100%}
+  #signin label,#choose label{flex:1 1 100%;margin:4px 0 -4px}
+  #first{width:100%;margin-top:16px}
+  #setupbox{margin-top:12px}
+  .code{font:600 22px/1.2 ui-monospace,Menlo,monospace;letter-spacing:2px;margin:6px 0}
   dialog{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:var(--r);width:min(92vw,420px)}
   dialog::backdrop{background:#000a}
   .tabs{display:flex;gap:8px;margin-top:12px}
@@ -79,9 +83,28 @@
       <button data-i="signin">Sign in</button>
     </form>
     <p class="out" data-o="login"></p>
-    <p class="mute" data-i="first">First time? Open your one-time login link (an admin makes it with add-fan) or paste it here, then set your password.</p>
-    <form data-f="claim"><input name="t" placeholder="https://…?t=…" autocomplete="off" required><button class="ghost" data-i="uselink">Use link</button></form>
-    <p class="out" data-o="claim"></p>
+    <button type="button" class="ghost" id="first" data-i="first" aria-expanded="false" aria-controls="setupbox">First time? Set up your password</button>
+    <div id="setupbox" hidden>
+      <p class="mute" data-i="setuphint">Enter your username and the setup code an admin sent you.</p>
+      <form data-f="setup">
+        <label for="su" data-i="user">Instagram username</label><input id="su" name="user" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+        <label for="sc" data-i="code">Setup code</label><input id="sc" name="code" placeholder="K7M2-9QXP" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" required maxlength="12">
+        <button data-i="continue">Continue</button>
+      </form>
+      <p class="out" data-o="setup"></p>
+    </div>
+  </section>
+  <!-- after a right setup code: the password has to be chosen before anything else (no way round it: there is no session until it is saved) -->
+  <section id="choose" hidden>
+    <h2 data-i="choose">Choose your password</h2>
+    <p class="mute" data-o="choosewho"></p>
+    <form data-f="choose">
+      <input name="username" autocomplete="username" hidden>
+      <label for="n1" data-i="newpw">New password (12+ characters)</label><input id="n1" name="new" type="password" autocomplete="new-password" minlength="12" required>
+      <label for="n2" data-i="againpw">New password again</label><input id="n2" name="again" type="password" autocomplete="new-password" minlength="12" required>
+      <button data-i="savepw">Save and sign in</button>
+    </form>
+    <p class="out" data-o="choose"></p>
   </section>
 
   <div class="tabs" id="tabs" role="tablist" hidden><button type="button" role="tab" data-tab="dash" aria-selected="true" data-i="tab.admin">Admin</button><button type="button" role="tab" data-tab="studio" aria-selected="false" data-i="tab.studio">Video studio</button></div>
@@ -92,10 +115,10 @@
         <p class="out" data-o="whoami"></p>
         <form data-f="password" autocomplete="on">
           <input name="username" autocomplete="username" hidden>
-          <input name="old" type="password" autocomplete="current-password" data-ph="oldpw" placeholder="Current password">
+          <input name="old" type="password" autocomplete="current-password" required data-ph="oldpw" placeholder="Current password">
           <input name="new" type="password" autocomplete="new-password" minlength="12" required data-ph="newpw" placeholder="New password (12+ characters)">
           <input name="again" type="password" autocomplete="new-password" minlength="12" required data-ph="againpw" placeholder="New password again">
-          <button data-i="setpw">Set password</button>
+          <button data-i="changepw">Change password</button>
         </form>
         <p class="out" data-o="password"></p>
       </section>
@@ -146,8 +169,10 @@
 
       <section>
         <h2 data-i="admins">Admins</h2>
-        <form data-f="grant"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button data-i="grant">Add admin</button></form>
+        <form data-f="grant"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><select name="club" data-clubs aria-label="Club"></select><button data-i="grant">Add admin</button></form>
+        <p class="mute" data-i="granthint">Club counts only for a new fan. Code lost before he set his password: add him again for a new one. A lost password: Damir runs set-password @user.</p>
         <p class="out" data-o="admins"></p>
+        <div data-o="code"></div>
         <div class="tbl"><table><tbody id="admins"></tbody></table></div>
       </section>
 
@@ -257,7 +282,7 @@
     <div class="row" style="margin-top:10px"><button class="ghost" value="no" data-i="cancel">Cancel</button><button class="danger" value="yes" id="cyes" disabled data-i="remove.btn">Remove</button></div>
   </form>
 </dialog>
-<script type="module" src="js/admin.js?v=38zzy"></script>
-<script type="module" src="js/admin-fan.js?v=38zzy"></script>
+<script type="module" src="js/admin.js?v=38zzz"></script>
+<script type="module" src="js/admin-fan.js?v=38zzz"></script>
 </body>
 </html>
