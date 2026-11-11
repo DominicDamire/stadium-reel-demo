@@ -161,6 +161,12 @@
         <p class="out" data-o="takedown"></p>
       </section>
 
+      <section class="wide" id="sec-voice">
+        <h2><span data-i="vreports">Voice reports</span> <button class="ghost" type="button" id="vreload" data-i="vreload">Reload</button></h2>
+        <p class="out" data-o="voice"></p>
+        <div class="tbl"><table><tbody id="vreports"></tbody></table></div>
+      </section>
+
       <section>
         <h2 data-i="skip">Roles: top-10 check</h2>
         <form data-f="skip"><input name="username" placeholder="@username" autocomplete="off" autocapitalize="none" required><button name="skip" value="1" data-i="skip.btn">No role this month</button><button class="ghost" name="skip" value="0" data-i="unskip.btn">Undo</button></form>
@@ -282,7 +288,7 @@
     <div class="row" style="margin-top:10px"><button class="ghost" value="no" data-i="cancel">Cancel</button><button class="danger" value="yes" id="cyes" disabled data-i="remove.btn">Remove</button></div>
   </form>
 </dialog>
-<script type="module" src="js/admin.js?v=39a"></script>
-<script type="module" src="js/admin-fan.js?v=39a"></script>
+<script type="module" src="js/admin.js?v=39b"></script>
+<script type="module" src="js/admin-fan.js?v=39b"></script>
 </body>
 </html>
