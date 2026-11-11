@@ -493,3 +493,52 @@ html.fp-on .dv-pill,.hud.jn-on~.dv-pill{display:none}
 .cp-xis li{display:grid; grid-template-columns:20px minmax(0,1fr) auto; gap:4px; font-size:12px; padding:3px 0; border-bottom:1px solid #222}
 .cp-xis em{font-style:normal; color:var(--muted)}.cp-xis span{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .fp-tabs:has(>:nth-child(5))>*{font-size:12px; letter-spacing:0; padding:0 2px}   /* five tabs with the cup: «Профиль» and «Состав» must not touch */
+
+/* fantasy hub (hub-page.js, docs/fan-backend.md «Fantasy hub»): manager, player page, votes, fixtures, More. Same street style: hard borders, offset club shadows */
+.tk .cap.vc{border-color:#F4F5F7; background:#333}
+.hb-mgr{margin-top:4px}
+.hb-team{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:10px}
+.hb-tn{font-size:22px; min-width:0; overflow-wrap:anywhere}.hb-tn.none{color:var(--muted); font-size:18px}
+.hb-team .fp-btn{flex:none; min-height:40px; font-size:13px}
+.hb-form{display:flex; gap:6px; margin-bottom:4px}
+.hb-in{flex:1; min-width:0; min-height:44px; padding:0 10px; background:#F4F5F7; color:#000; border:2px solid #000; box-shadow:3px 3px 0 var(--jc); font:700 16px var(--body); border-radius:0}
+.hb-form .fp-btn{flex:none; padding:0 10px; font-size:13px}
+.hb-hint{display:block; font-size:12px; color:var(--muted); margin-bottom:10px}
+.hb-stats{margin-bottom:6px}.hb-stats dd{font-size:24px; overflow-wrap:anywhere}.hb-stats dd.tx{font-size:17px; line-height:1.15}.hb-stats dt{white-space:normal; line-height:1.2}
+.hb-row{display:flex; justify-content:space-between; align-items:center; gap:12px; width:100%; min-height:44px}
+.fp-hist li:has(>.hb-row){padding:0}
+.hb-mh{display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:8px; padding:8px 12px; margin-bottom:10px; background:#000; border:2px solid #F4F5F7; box-shadow:3px 3px 0 var(--jc); min-height:44px}
+.hb-mh small{font:700 11px var(--body); letter-spacing:.1em; text-transform:uppercase; color:var(--gold)}
+.hb-mh b{font-size:17px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}.hb-mh span{font:700 14px var(--disp); color:var(--muted)}
+.hb-card{display:grid; place-items:center; padding:6px 0 4px; margin-bottom:3.6em; font-size:min(12px,3.1vw)}   /* the ticket stub hangs below the card box */
+.hb-card .tk-big{font-size:min(12px,3.1vw)}
+.hb-who{display:flex; align-items:center; justify-content:center; gap:6px; flex-wrap:wrap; font-weight:700; margin-bottom:4px}.hb-who small{color:var(--muted)}
+.hb-src{color:var(--gold); text-decoration:underline!important}
+.hb-news{color:var(--text)}
+.hb-wide{width:100%; margin-top:4px}
+.hb-opts{display:grid; gap:6px}
+.hb-opt{position:relative; display:flex; justify-content:space-between; align-items:center; gap:8px; min-height:44px; padding:0 10px; background:#141414!important; border:2px solid #333!important; overflow:hidden; text-align:left}
+.hb-opt i{position:absolute; inset:0 auto 0 0; background:color-mix(in srgb,var(--jc) 35%,transparent); pointer-events:none}
+.hb-opt span,.hb-opt b{position:relative; min-width:0}.hb-opt span{font:600 14px var(--body); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}.hb-opt b{font:700 16px var(--disp)}
+.hb-opt[aria-pressed=true]{border-color:#F4F5F7!important; box-shadow:3px 3px 0 var(--jc)}
+.hb-opt:disabled{cursor:default}
+.hb-two{display:grid; grid-template-columns:1fr 1fr; gap:8px}.hb-two h4{font:700 13px var(--disp); text-transform:uppercase; margin-bottom:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.hb-two .hb-opt{padding:0 6px}.hb-two .hb-opt span{font-size:12px}
+.hb-potm{display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:10px; padding:10px 12px; margin-bottom:10px; background:var(--gold); color:#000; border:2px solid #000; box-shadow:4px 4px 0 #000}
+.hb-potm>b{font-size:26px}.hb-potm span{display:grid; min-width:0}.hb-potm span b{font-size:18px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}.hb-potm small{font:600 12px var(--body)}.hb-potm em{font:700 22px var(--disp); font-style:normal}
+.hb-star{color:var(--gold)!important}
+.hb-pl{text-decoration:underline; text-decoration-color:#555; text-underline-offset:2px}
+.hb-pp{width:100%; max-width:360px}
+.hb-fxs{display:grid; gap:6px}
+.hb-fx{display:grid; gap:4px; padding:8px 10px; background:#141414; border:2px solid #333}
+.hb-fx.done{border-color:#555}
+.hb-fx small{font:600 11px var(--body); color:var(--muted)}
+.hb-fx span{display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:8px; align-items:center}
+.hb-fx span b{font:600 14px var(--body); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}.hb-fx span b:last-child{text-align:right}
+.hb-fx em{font:700 16px var(--disp); font-style:normal}
+.hb-ch{display:flex; align-items:center; gap:6px; font:700 14px var(--disp); text-transform:uppercase; margin:12px 0 2px}
+.hb-pc{font-size:14px!important; color:var(--gold)!important}
+.hb-more{display:grid; gap:10px; padding-top:4px}
+.hb-big{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:2px 10px; align-items:center; padding:14px; background:#141414; border:2px solid #F4F5F7; box-shadow:4px 4px 0 var(--jc); min-height:64px}
+.hb-big b{font-size:20px}.hb-big small{grid-column:1; color:var(--muted); font-size:13px}.hb-big i{grid-row:1 / span 2; grid-column:2; font-style:normal; font-size:22px}
+.tk-ov .tk-acts{flex-wrap:wrap}.tk-ov .tk-acts .fp-btn{flex:1 1 40%; min-width:0}
